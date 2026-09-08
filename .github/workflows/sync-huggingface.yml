@@ -3,9 +3,6 @@ name: Sync THE BETWEEN to Hugging Face
 on:
   push:
     branches: [main]
-    paths:
-      - "platforms/huggingface/**"
-      - ".github/workflows/sync-huggingface.yml"
   workflow_dispatch:
 
 permissions:
@@ -32,12 +29,7 @@ jobs:
 
           api = HfApi(token=os.environ["HF_TOKEN"])
           repo_id = "marcosnauer/the-between"
-          api.create_repo(
-              repo_id=repo_id,
-              repo_type="dataset",
-              private=False,
-              exist_ok=True,
-          )
+          api.create_repo(repo_id=repo_id, repo_type="dataset", private=False, exist_ok=True)
           api.upload_folder(
               repo_id=repo_id,
               repo_type="dataset",
