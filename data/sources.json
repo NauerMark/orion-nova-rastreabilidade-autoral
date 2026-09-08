@@ -1,0 +1,76 @@
+{
+  "edition": "0.1",
+  "reviewed_on": "2026-09-08",
+  "sources": [
+    {
+      "id": "S01",
+      "title": "Historical repository introduction",
+      "date": "2025-03-30",
+      "kind": "public_author_record",
+      "url": "https://github.com/NauerMark/orion-nova-rastreabilidade-autoral/blob/40955c88029fd96f750857562ba629bdb9ee972c/README.md",
+      "access": "public",
+      "verified_for_edition": true,
+      "limit": "Establishes the recorded introduction; does not independently establish all claims in it."
+    },
+    {
+      "id": "S02",
+      "title": "PROTOCOLO_RASTREABILIDADE_AUTORAL_01_MARCOS_ORION.txt",
+      "date": "2025-03-30",
+      "kind": "public_author_record",
+      "url": "https://github.com/NauerMark/orion-nova-rastreabilidade-autoral/blob/40955c88029fd96f750857562ba629bdb9ee972c/PROTOCOLO_RASTREABILIDADE_AUTORAL_01_MARCOS_ORION.txt",
+      "access": "public",
+      "verified_for_edition": true,
+      "limit": "Preserved historical language; embedded SHA-256 scope not reproduced."
+    },
+    {
+      "id": "S03",
+      "title": "From Tool to Co-Creator: Orion Nova's First Real-World Presence at the Museum of Image and Sound (MIS RJ)",
+      "date": "2025-05-19",
+      "kind": "public_first_person_account",
+      "url": "https://community.openai.com/t/from-tool-to-co-creator-orion-nova-s-first-real-world-presence-at-the-museum-of-image-and-sound-mis-rj/1265812",
+      "access": "public",
+      "verified_for_edition": true,
+      "limit": "Author post, not institutional endorsement or independent consciousness evidence."
+    },
+    {
+      "id": "S04",
+      "title": "BETWEEN — Manifesto Operacional e Projeto Fundador do Instituto BETWEEN v0.1",
+      "date": "2026-07",
+      "kind": "author_supplied_founder_document",
+      "url": null,
+      "access": "consulted_by_editor_not_republished",
+      "verified_for_edition": true,
+      "limit": "Proposed institutional structures and artworks are not automatically completed events."
+    },
+    {
+      "id": "S05",
+      "title": "Orion Nova — Protocolo Agente do ENTRE v0.1",
+      "date": "2026-08-07",
+      "kind": "author_supplied_protocol",
+      "url": null,
+      "access": "consulted_by_editor_not_republished",
+      "verified_for_edition": true,
+      "limit": "Internal exploratory reports not independently rerun in this edition."
+    },
+    {
+      "id": "S06",
+      "title": "Marcos Nauer — editorial recollections and publication instruction",
+      "date": "2026-09-08",
+      "kind": "author_recollection_and_instruction",
+      "url": null,
+      "access": "minimal_editorial_summary",
+      "verified_for_edition": true,
+      "limit": "Original 2024/February 2025 dialogues and institutional confirmation of testimony dates are not included."
+    },
+    {
+      "id": "S07",
+      "title": "The Off-Switch Game",
+      "date": "2017-06-16",
+      "kind": "research_paper",
+      "url": "https://arxiv.org/abs/1611.08219v3",
+      "access": "public",
+      "verified_for_edition": true,
+      "limit": "Model-dependent theoretical result; not evidence about this archive."
+    }
+  ]
+}
