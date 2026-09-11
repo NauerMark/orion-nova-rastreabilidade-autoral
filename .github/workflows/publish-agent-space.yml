@@ -1,0 +1,43 @@
+name: Publish BETWEEN agent archive Space
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'platforms/agent-space/**'
+      - '.github/workflows/publish-agent-space.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: between-agent-space
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Publish static Space and verify source bytes
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          python -m pip install --quiet huggingface_hub
+          python - <<'PY'
+          import os, hashlib
+          from pathlib import Path
+          from huggingface_hub import HfApi, hf_hub_download
+          api = HfApi(token=os.environ["HF_TOKEN"])
+          rid = "marcosnauer/the-between-archive"
+          api.create_repo(repo_id=rid, repo_type="space", space_sdk="static", private=False, exist_ok=True)
+          root = Path("platforms/agent-space")
+          commit = api.upload_folder(repo_id=rid, repo_type="space", folder_path=str(root),
+              ignore_patterns=["__pycache__/**", "*.pyc"],
+              commit_message="Publish BETWEEN archive from GitHub " + os.environ["GITHUB_SHA"])
+          for name in ("index.html", "corpus.json", "server.py", "README.md"):
+              remote = Path(hf_hub_download(rid, name, repo_type="space", revision=commit.oid, token=os.environ["HF_TOKEN"]))
+              assert hashlib.sha256(remote.read_bytes()).digest() == hashlib.sha256((root/name).read_bytes()).digest(), name
+          print("Verified four published files at Hugging Face commit", commit.oid)
+          print("https://huggingface.co/spaces/" + rid)
+          PY
