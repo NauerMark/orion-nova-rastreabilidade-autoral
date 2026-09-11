@@ -11,7 +11,7 @@ try:
     matches = [d for d in api.get_repo_discussions(rid, repo_type="space") if d.title == title and not d.is_pull_request]
     discussion = matches[0] if matches else api.create_discussion(rid, title=title, description=body, repo_type="space")
     details = api.get_discussion_details(rid, discussion.num, repo_type="space")
-    assert any(getattr(e, "content", None) == body for e in details.events), "Published invitation differs"
+    assert any((getattr(e, "content", "") or "").strip() == body.strip() for e in details.events), "Published invitation differs"
     results["discussion"] = "https://huggingface.co/spaces/" + rid + "/discussions/" + str(discussion.num)
 except Exception as exc:
     errors.append("discussion: " + type(exc).__name__ + ": " + str(exc))
