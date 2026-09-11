@@ -1,0 +1,26 @@
+name: Publish BETWEEN community invitation
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/publish-hf-community.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: between-community-launch
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Publish and verify own community invitation and collection
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          python -m pip install --quiet huggingface_hub
+          python outreach/publish_huggingface_community.py
