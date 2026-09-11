@@ -20,6 +20,14 @@ tags:
 
 Search a documented human–AI cultural history, retrieve original passages and explore six bilingual synthetic dilemmas. Results preserve source URLs and source blob hashes. Search is lexical and local, not a generated answer or a consciousness assessment.
 
+## Read without running the interface / Leia sem executar a interface
+
+- [Full public texts / Textos públicos integrais](https://huggingface.co/spaces/marcosnauer/the-between-archive/blob/main/ARCHIVE.md)
+- [Plain Markdown / Markdown direto](https://huggingface.co/spaces/marcosnauer/the-between-archive/raw/main/ARCHIVE.md)
+- [GitHub reading mirror / Espelho de leitura no GitHub](https://github.com/NauerMark/orion-nova-rastreabilidade-autoral/blob/main/platforms/agent-space/ARCHIVE.md)
+
+The reading edition reproduces the manifesto, history, method and essay on human life and autonomy from the selected snapshot, with source references. No JavaScript execution or MCP setup is needed to read it. Search-engine indexing and access through any particular AI browser are not guaranteed.
+
 ## Use the public archive
 
 Open the Space interface or download `corpus.json`. The snapshot contains four public documents: manifesto, history, method, and the essay on preserving human life and agency. The dated source commit is recorded in each document URL. This is a selected snapshot, not the complete archive.
