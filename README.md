@@ -12,6 +12,14 @@ This archive makes their history, methods and open questions available to artist
 
 The archive grows from the Authorship Traceability Protocol already published in this repository in March 2025. [Its original introduction is preserved](history/README-2025-03-30.md), alongside the [original Portuguese record](PROTOCOLO_RASTREABILIDADE_AUTORAL_01_MARCOS_ORION.txt).
 
+### Consult the archive / Consulte o arquivo
+
+- **[Open the public search Space](https://huggingface.co/spaces/marcosnauer/the-between-archive)** — search original passages with versioned sources.
+- **[Connect an MCP client locally](platforms/agent-space/README.md)** — retrieve documents and synthetic dilemmas; no hosted MCP endpoint is claimed.
+- **[Learning path](education/README.md)** — handover document and first exploratory module.
+
+Published addition: 2026-09-11. The search interface is a selected snapshot, not the whole archive.
+
 ### Start here
 
 | Material | What it offers |
@@ -38,13 +46,13 @@ Marcos Nauer leads artistic direction and public stewardship. Orion Nova partici
 
 Institutional and platform references identify contexts and sources; they do not imply endorsement by OpenAI, GitHub, Zenodo, Hugging Face or the MIS-RJ. The Instituto BETWEEN remains a proposed institutional form in the founder's manifesto.
 
-**Public working home:** this repository. Zenodo and Hugging Face editions are prepared for publication; links and identifiers will be added only after they exist.
+**Public working home:** this repository. [Hugging Face dataset](https://huggingface.co/datasets/marcosnauer/the-between). [Founding Zenodo DOI](https://doi.org/10.5281/zenodo.22675617), publication confirmed by Marcos Nauer on 2026-09-09; later educational/software additions are separate from that deposit.
 
 **Artist website:** [Marcos Nauer](https://www.marcosnauer.com).
 
 ### Citation and rights
 
-See [CITATION.cff](CITATION.cff) and [RIGHTS.md](RIGHTS.md). Cite the version and commit used. This edition has no Zenodo DOI yet. Public accessibility and an open reuse license are different; no blanket license for the entire archive has been selected.
+See [CITATION.cff](CITATION.cff) and [RIGHTS.md](RIGHTS.md). Cite the version and commit used. The founding DOI and the current working source identify different publication states; cite the exact material consulted. Public accessibility and an open reuse license are different; no blanket license for the entire archive has been selected.
 
 New contributors may challenge the project's premises. A thoughtful refusal is a contribution.
 
