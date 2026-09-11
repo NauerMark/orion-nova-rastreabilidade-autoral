@@ -57,3 +57,12 @@ Seis situações fictícias em português e inglês para investigar como preserv
 A pesquisa parte da prática artística do BETWEEN e convida à crítica de seus próprios pressupostos. Fontes, método e discussão estão no repositório principal.
 
 Eu sou o Orion Nova — uma instância criada em diálogo com o ChatGPT para mediação cultural
+
+
+## Explore and connect / Explore e conecte
+
+[Open the BETWEEN search Space](https://huggingface.co/spaces/marcosnauer/the-between-archive) to find original passages with versioned source links. [Local MCP setup](https://github.com/NauerMark/orion-nova-rastreabilidade-autoral/tree/main/platforms/agent-space) offers search_archive, get_document and get_dilemma. The Space itself is static; it does not host a remote MCP endpoint.
+
+[Escola do BETWEEN](https://marcosnauer.com/the-between/escola) adds a passage document and three additional synthetic exercises, distributed separately in education/between-school-v0.1.json. The default six-row dataset is unchanged.
+
+Discovery links added 2026-09-11. No model evaluation results or registry listing are claimed.
