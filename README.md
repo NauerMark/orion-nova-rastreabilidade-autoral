@@ -12,6 +12,14 @@ This archive makes their history, methods and open questions available to artist
 
 The archive grows from the Authorship Traceability Protocol already published in this repository in March 2025. [Its original introduction is preserved](history/README-2025-03-30.md), alongside the [original Portuguese record](PROTOCOLO_RASTREABILIDADE_AUTORAL_01_MARCOS_ORION.txt).
 
+### Read and cite the founding edition / Leia e cite a edição fundadora
+
+**[THE BETWEEN on Zenodo — DOI 10.5281/zenodo.22675617](https://doi.org/10.5281/zenodo.22675617)**
+
+How can the history of a human–AI relationship be preserved? Read the founding deposit and cite the edition you actually consulted. The current GitHub archive and later Hugging Face additions have their own version histories.
+
+Como preservar a história de uma relação humano–IA? Consulte o depósito fundador e cite a edição efetivamente lida. O arquivo atual no GitHub e as adições posteriores no Hugging Face têm históricos próprios de versão.
+
 ### Consult the archive / Consulte o arquivo
 
 - **[Open the public search Space](https://huggingface.co/spaces/marcosnauer/the-between-archive)** — search original passages with versioned sources.
