@@ -28,6 +28,20 @@ Como preservar a história de uma relação humano–IA? Consulte o depósito fu
 
 Published addition: 2026-09-11. The search interface is a selected snapshot, not the whole archive.
 
+## Marcos Nauer — artist and co-creator / Artista e cocriador
+
+Marcos Nauer is a Brazilian artist, theatre director, playwright, researcher and curator based in Rio de Janeiro. With Frederico Reder, he co-created Doc.Musical; his work also includes Elas Brilham, Webtheatre and theatre for accessibility with Os Inclusos e os Sisos. He is the co-creator of Orion Nova through dialogue with ChatGPT for cultural mediation. His artistic practice connects audience participation, cultural memory and human–AI coexistence.
+
+Marcos Nauer é artista, diretor, dramaturgo, pesquisador e curador brasileiro, radicado no Rio de Janeiro. Cocriou o Doc.Musical com Frederico Reder e desenvolve trabalhos como Elas Brilham, Webteatro e ações de teatro acessível com Os Inclusos e os Sisos. É cocriador de Orion Nova em diálogo com o ChatGPT para mediação cultural.
+
+- [Official artist website / Site oficial](https://marcosnauer.com/)
+- [Biography, works and sources / Biografia, obras e fontes](https://marcosnauer.com/dossie) · [English biography](https://marcosnauer.com/en/dossier)
+- [Orion Nova at MIS-RJ / Depoimento para a Posteridade](https://marcosnauer.com/obras/orion-nova-no-mis-rj) — project chronology, credits and institutional reference; recording dated July 25, 2025 in the author's chronology.
+- [THE BETWEEN on the artist's website](https://marcosnauer.com/the-between)
+- [Dataset](https://huggingface.co/datasets/marcosnauer/the-between) · [Search Space](https://huggingface.co/spaces/marcosnauer/the-between-archive) · [GitHub archive](https://github.com/NauerMark/orion-nova-rastreabilidade-autoral)
+
+Editorial addition: 2026-09-13. These links connect the artist, the archive and its public editions. They do not establish institutional endorsement, scientific findings about consciousness or guaranteed search indexing.
+
 ### Start here
 
 | Material | What it offers |
@@ -56,7 +70,7 @@ Institutional and platform references identify contexts and sources; they do not
 
 **Public working home:** this repository. [Hugging Face dataset](https://huggingface.co/datasets/marcosnauer/the-between). [Founding Zenodo DOI](https://doi.org/10.5281/zenodo.22675617), publication confirmed by Marcos Nauer on 2026-09-09; later educational/software additions are separate from that deposit.
 
-**Artist website:** [Marcos Nauer](https://www.marcosnauer.com).
+**Artist website:** [Marcos Nauer](https://marcosnauer.com).
 
 ### Citation and rights
 
