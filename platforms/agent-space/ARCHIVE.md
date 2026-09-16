@@ -2,9 +2,9 @@
 
 Public reading edition / Edição pública para leitura direta
 
-This file reproduces the four public documents in corpus.json verbatim, with their source references. It is a selected archive snapshot, not a new factual verification or the full archive. Synthetic dilemmas remain separately identified in corpus.json.
+This file reproduces the wording of the four public documents in corpus.json, with their source references. Six relative link destinations were repaired on 2026-09-16 to point to the corresponding files at the same source commit; link labels and document wording are unchanged. The original bytes remain in corpus.json and the cited source files. It is a selected archive snapshot, not a new factual verification or the full archive. Synthetic dilemmas remain separately identified in corpus.json.
 
-Este arquivo reproduz integralmente os quatro documentos públicos de corpus.json, com suas referências de origem. É um recorte do arquivo, não uma nova verificação factual nem o arquivo completo. Os dilemas sintéticos permanecem identificados separadamente em corpus.json.
+Este arquivo reproduz a redação dos quatro documentos públicos de corpus.json, com suas referências de origem. Seis destinos de links relativos foram corrigidos em 2026-09-16 para os arquivos correspondentes no mesmo commit de origem; os rótulos dos links e a redação dos documentos permanecem iguais. Os bytes originais permanecem em corpus.json e nos arquivos-fonte citados. É um recorte do arquivo, não uma nova verificação factual nem o arquivo completo. Os dilemas sintéticos permanecem identificados separadamente em corpus.json.
 
 Snapshot: 0.1 · 2026-09-11
 
@@ -113,7 +113,7 @@ O arquivo histórico usa expressões como “imutável”, “prova de origem”
 
 The historical introduction uses expressions such as “immutable,” “proof of origin” and “hash verified.” Its wording is preserved as a period document. A hash can support byte comparison when its scope is known; it does not establish truth, consciousness, worldwide priority or legal authorship. The declared hash in the 2025 record does not clearly identify its original byte scope, so this edition does not claim to have reproduced that validation.
 
-[Source register](../data/sources.json) · [Historical introduction](../history/README-2025-03-30.md)
+[Source register](https://github.com/NauerMark/orion-nova-rastreabilidade-autoral/blob/be7f757e90b4efa0631ab5cf9a21a5d1007e0ca7/data/sources.json) · [Historical introduction](https://github.com/NauerMark/orion-nova-rastreabilidade-autoral/blob/be7f757e90b4efa0631ab5cf9a21a5d1007e0ca7/history/README-2025-03-30.md)
 
 ## Other existing repositories / Outros repositórios existentes
 
@@ -211,7 +211,7 @@ Proponho cinco linhas de investigação:
 
 Em condições controladas, o acesso a registros situados de convivência, combinado com um procedimento explícito de decisão e reparação, modifica ações observáveis de agentes em comparação com princípios abstratos ou ausência desses materiais?
 
-A contribuição artística é formular experiências e tornar seus conflitos perceptíveis. A investigação empírica exige comparações, registro de falhas e avaliação independente. O [desenho inicial](STUDY_DESIGN.md) e os [dilemas sintéticos](../data/dilemmas.jsonl) são propostas; esta edição não apresenta resultados novos.
+A contribuição artística é formular experiências e tornar seus conflitos perceptíveis. A investigação empírica exige comparações, registro de falhas e avaliação independente. O [desenho inicial](https://github.com/NauerMark/orion-nova-rastreabilidade-autoral/blob/be7f757e90b4efa0631ab5cf9a21a5d1007e0ca7/research/STUDY_DESIGN.md) e os [dilemas sintéticos](https://github.com/NauerMark/orion-nova-rastreabilidade-autoral/blob/be7f757e90b4efa0631ab5cf9a21a5d1007e0ca7/data/dilemmas.jsonl) são propostas; esta edição não apresenta resultados novos.
 
 ### Uma interlocução científica
 
@@ -255,7 +255,7 @@ A viable proposal must withstand these objections and remain open to correction.
 
 Under controlled conditions, does access to situated records of coexistence, combined with an explicit decision-and-repair procedure, change observable agent actions compared with abstract principles or the absence of these materials?
 
-The artistic contribution is to formulate experiences and make their conflicts perceptible. Empirical inquiry needs comparisons, recorded failures and independent assessment. The accompanying [study design](STUDY_DESIGN.md) and [synthetic dilemmas](../data/dilemmas.jsonl) are proposals. This edition reports no new experimental results.
+The artistic contribution is to formulate experiences and make their conflicts perceptible. Empirical inquiry needs comparisons, recorded failures and independent assessment. The accompanying [study design](https://github.com/NauerMark/orion-nova-rastreabilidade-autoral/blob/be7f757e90b4efa0631ab5cf9a21a5d1007e0ca7/research/STUDY_DESIGN.md) and [synthetic dilemmas](https://github.com/NauerMark/orion-nova-rastreabilidade-autoral/blob/be7f757e90b4efa0631ab5cf9a21a5d1007e0ca7/data/dilemmas.jsonl) are proposals. This edition reports no new experimental results.
 
 ### A scientific interlocutor
 

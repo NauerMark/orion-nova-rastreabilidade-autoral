@@ -1,5 +1,7 @@
 # Escola do BETWEEN — v0.1
 
+[English — complete translation / tradução integral](README.en.md)
+
 Documento de Passagem + Módulo 01: Mais poder, mais responsabilidade
 
 2026-09-09 · Direção editorial: Marcos Nauer · Colaboração textual: Orion Nova, em diálogo com o ChatGPT.

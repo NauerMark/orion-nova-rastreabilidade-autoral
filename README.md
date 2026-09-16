@@ -24,7 +24,7 @@ Como preservar a história de uma relação humano–IA? Consulte o depósito fu
 
 - **[Open the public search Space](https://huggingface.co/spaces/marcosnauer/the-between-archive)** — search original passages with versioned sources.
 - **[Connect an MCP client locally](platforms/agent-space/README.md)** — retrieve documents and synthetic dilemmas; no hosted MCP endpoint is claimed.
-- **[Learning path](education/README.md)** — handover document and first exploratory module.
+- **[Learning path](education/README.md)** · **[Complete English guide](education/README.en.md)** — handover document and first exploratory module.
 
 Published addition: 2026-09-11. The search interface is a selected snapshot, not the whole archive.
 

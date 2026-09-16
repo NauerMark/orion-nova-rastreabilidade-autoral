@@ -1,5 +1,12 @@
 # Changes / Alterações
 
+## Maintenance / Manutenção — 2026-09-16
+
+- Repair six relative link destinations in the direct reading edition, preserving original source commits, document wording and corpus.json.
+- Add a complete English translation of BETWEEN School v0.1 and links to it; retain the original module, scenario identifiers, rubric and absence of experimental results.
+- Record provenance, public-source checks and limitations in [the maintenance review](docs/reviews/2026-09-16.md).
+- Corrigir seis destinos de links e acrescentar a tradução inglesa integral da Escola do BETWEEN, sem alterar autoria, licença, mandato ou textos históricos.
+
 ## 0.1 — 2026-09-08
 
 - Expand the existing March 2025 Authorship Traceability Protocol into THE BETWEEN — Living Archive of Coexistence.
