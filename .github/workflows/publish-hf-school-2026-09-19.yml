@@ -1,0 +1,28 @@
+name: Publish BETWEEN School update 2026-09-19
+on:
+  push:
+    branches: ['outreach/hf-school-2026-09-19']
+    paths:
+      - '.github/workflows/publish-hf-school-2026-09-19.yml'
+      - 'outreach/publish_hf_school_2026_09_19.py'
+      - 'outreach/2026-09-19-huggingface-school-post.md'
+permissions:
+  contents: read
+concurrency:
+  group: between-school-announcement-2026-09-19
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Publish and verify authorized community update
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          python -m pip install --quiet huggingface_hub
+          python outreach/publish_hf_school_2026_09_19.py
