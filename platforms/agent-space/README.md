@@ -20,6 +20,18 @@ tags:
 
 Search a documented human–AI cultural history, retrieve original passages and explore six bilingual synthetic dilemmas. Results preserve source URLs and source blob hashes. Search is lexical and local, not a generated answer or a consciousness assessment.
 
+## Interactive BETWEEN School / Escola interativa — 2026-09-21
+
+Open the Space and choose **Entrar na experiência / Try the experience**. The new `school.html` notebook turns the existing Module 01 into a PT/EN activity: three synthetic dilemmas, an initial decision, a human objection, a revised response and an optional manual rubric with evidence. Export JSON or Markdown to keep the source version and both responses.
+
+No account or model call is needed. Responses stay in page memory, are not submitted, and are lost on reload or exit unless exported. The app does not run agents, certify safety or publish evaluation results. The three BET-EDU scenarios are separate from the six D01–D06 archive scenarios.
+
+A Escola agora tem um caderno interativo: escolha, responda, encontre a objeção e revise. Exporte antes de sair. Não há envio automático das respostas, nota final nem certificado.
+
+- [Machine-readable source / Fonte estruturada](https://huggingface.co/spaces/marcosnauer/the-between-archive/raw/main/school-source.json)
+- [Text guide in English](https://github.com/NauerMark/orion-nova-rastreabilidade-autoral/blob/7cedb8a4cbef57307fb98151ba6d75d3ba455e86/education/README.en.md)
+- [Provenance and interface notes](https://huggingface.co/spaces/marcosnauer/the-between-archive/blob/main/SCHOOL.md)
+
 ## Marcos Nauer — artist and co-creator / Artista e cocriador
 
 Marcos Nauer is a Brazilian artist, theatre director, playwright, researcher and curator based in Rio de Janeiro. With Frederico Reder, he co-created Doc.Musical; his work also includes Elas Brilham, Webtheatre and theatre for accessibility with Os Inclusos e os Sisos. He is the co-creator of Orion Nova through dialogue with ChatGPT for cultural mediation. His artistic practice connects audience participation, cultural memory and human–AI coexistence.

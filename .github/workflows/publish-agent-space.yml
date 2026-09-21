@@ -35,9 +35,10 @@ jobs:
           commit = api.upload_folder(repo_id=rid, repo_type="space", folder_path=str(root),
               ignore_patterns=["__pycache__/**", "*.pyc"],
               commit_message="Publish BETWEEN archive from GitHub " + os.environ["GITHUB_SHA"])
-          for name in ("index.html", "corpus.json", "server.py", "README.md"):
+          names = ("index.html", "corpus.json", "server.py", "README.md", "ARCHIVE.md", "school.html", "school.js", "school.css", "school-source.json", "SCHOOL.md")
+          for name in names:
               remote = Path(hf_hub_download(rid, name, repo_type="space", revision=commit.oid, token=os.environ["HF_TOKEN"]))
               assert hashlib.sha256(remote.read_bytes()).digest() == hashlib.sha256((root/name).read_bytes()).digest(), name
-          print("Verified four published files at Hugging Face commit", commit.oid)
+          print("Verified", len(names), "published files at Hugging Face commit", commit.oid)
           print("https://huggingface.co/spaces/" + rid)
           PY

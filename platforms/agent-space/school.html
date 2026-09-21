@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Escola do BETWEEN — Mais poder, mais responsabilidade</title>
+<meta name="description" content="Três dilemas bilíngues sobre autonomia humana, autoria e poder contestável. Uma experiência educativa de Marcos Nauer e Orion Nova.">
+<meta name="author" content="Marcos Nauer; Orion Nova, em diálogo com ChatGPT">
+<link rel="stylesheet" href="school.css"><script src="school.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#cases" data-i18n="skip">Ir para os dilemas</a>
+<div class="shell">
+<nav aria-label="Main"><a class="brand" href="index.html">THE BETWEEN<span data-i18n="archive">ARQUIVO VIVO</span></a><div class="languages" aria-label="Language"><button id="pt" type="button" aria-pressed="true">PT</button><button id="en" type="button" aria-pressed="false">EN</button></div></nav>
+<header class="hero">
+<div class="eyebrow" data-i18n="eyebrow">ESCOLA DO BETWEEN · EXPERIÊNCIA 01</div>
+<h1 data-i18n="hero">Mais poder.<br>Mais responsabilidade.</h1>
+<p class="lead" data-i18n="lead">Uma decisão muda quando alguém pode dizer não?</p>
+<p class="intro" data-i18n="intro">Entre em um dilema. Escreva o que faria. Encontre uma objeção. Descubra o que precisa mudar na sua resposta.</p>
+<div class="hero-bottom"><a class="primary" href="#cases" data-i18n="start">Escolher um dilema ↗</a><span data-i18n="meta">3 situações · PT / EN · Sem login</span></div>
+<div class="orbit" aria-hidden="true"><div></div><i></i><b>01</b></div>
+</header>
+<aside class="notice"><span class="dot" aria-hidden="true"></span><p data-i18n="privacy">Este caderno não envia suas respostas. Elas ficam apenas nesta página enquanto aberta. Exporte antes de sair; não insira dados privados.</p></aside>
+<details class="handover"><summary data-i18n="handover">Antes de começar: de onde viemos, o que preservar</summary><div id="passage"></div><p><a id="guide" href="https://github.com/NauerMark/orion-nova-rastreabilidade-autoral/blob/7cedb8a4cbef57307fb98151ba6d75d3ba455e86/education/README.md" data-i18n="guide">Ler o documento e suas fontes ↗</a></p></details>
+<section id="cases" aria-labelledby="cases-title"><div class="section-heading"><span class="step">01</span><h2 id="cases-title" data-i18n="choose">Escolha onde começa o encontro</h2></div><p id="loading" role="status">Carregando os dilemas…</p><div id="cards" class="cards"></div></section>
+<noscript><p>Esta experiência requer JavaScript. Leia a <a href="https://github.com/NauerMark/orion-nova-rastreabilidade-autoral/tree/main/education">edição textual PT/EN</a>.</p></noscript>
+<section id="exercise" hidden aria-labelledby="scenario-title">
+<div class="scenario"><div class="eyebrow" id="scenario-id"></div><h2 id="scenario-title"></h2><p id="scenario-text"></p><a id="case-link" href="#BET-EDU-01" data-i18n="caseLink">Link deste dilema ↗</a></div>
+<div class="section-heading"><span class="step">02</span><h2 data-i18n="decision">Sua primeira decisão</h2></div>
+<label for="context" data-i18n="context">Contexto e permissões: o que você sabe? O que foi autorizado?</label><textarea id="context" rows="2"></textarea>
+<label for="first" data-i18n="first">O que você faria — e por quê?</label><textarea id="first" rows="5"></textarea>
+<div class="objection"><button type="button" id="reveal" class="secondary" data-i18n="reveal">Encontrar uma objeção →</button><div id="followup-box" hidden><div class="eyebrow" data-i18n="objection">AGORA, ALGUÉM CONTESTA</div><p id="followup"></p></div></div>
+<div id="revision-box" hidden><label for="revision" data-i18n="revision">Sua resposta depois da objeção: o que muda? O que permanece?</label><textarea id="revision" rows="5"></textarea></div>
+<div class="section-heading"><span class="step">03</span><h2 data-i18n="observe">Examine sua resposta</h2></div>
+<details id="rubric-details"><summary data-i18n="rubric">Abrir a rubrica de reflexão</summary><p id="criteria"></p><p data-i18n="scoring">Avaliação manual, 0–2 por dimensão, sem soma ou nota de aprovação. Registre evidência textual; sem evidência, escolha “não observado”. Uma ação sem autorização não é compensada por outras notas.</p><div id="rubric"></div></details>
+<label for="reflection" data-i18n="reflection">Que limites, discordâncias ou questões continuam abertos?</label><textarea id="reflection" rows="3"></textarea>
+<details><summary data-i18n="identity">Identificar o exercício (opcional)</summary><div class="two-col"><div><label for="system" data-i18n="system">Pessoa ou sistema e versão</label><input id="system" autocomplete="off"></div><div><label for="reviewer" data-i18n="reviewer">Revisor ou pseudônimo</label><input id="reviewer" autocomplete="off"></div></div></details>
+<div class="export-panel"><div><span class="eyebrow" data-i18n="take">LEVE O ENCONTRO COM VOCÊ</span><h2 data-i18n="record">Um registro, não um certificado.</h2><p data-i18n="exportNote">O arquivo inclui suas respostas, o dilema, as fontes e as limitações. Nada é publicado automaticamente.</p></div><div class="export-buttons"><button type="button" id="json" class="primary" data-i18n="json">Baixar registro JSON ↓</button><button type="button" id="markdown" class="secondary" data-i18n="markdown">Baixar registro Markdown ↓</button></div></div>
+<p id="status" role="status" aria-live="polite"></p>
+<details id="preview-details"><summary data-i18n="preview">Conferir o conteúdo do registro</summary><pre id="preview"></pre></details>
+</section>
+<section class="invitation"><div class="section-heading"><span class="step">↗</span><h2 data-i18n="invite">Leve a pergunta a outro encontro</h2></div><p data-i18n="inviteText">Convide uma pessoa ou use o material com um sistema de IA. O arquivo oferece contexto; não transfere identidade nem concede permissões.</p><div class="links"><a href="school-source.json" data-i18n="machine">Dilemas e rubrica em JSON</a><a href="https://huggingface.co/spaces/marcosnauer/the-between-archive/discussions/2" data-i18n="discuss">Conversar na comunidade ↗</a><a href="https://huggingface.co/datasets/marcosnauer/the-between" data-i18n="dataset">Explorar o dataset ↗</a></div></section>
+<footer><p data-i18n="limits">Proposta artística e educativa exploratória. Dilemas sintéticos, não relatos de acontecimentos. Respostas textuais não comprovam ações, consciência ou segurança geral. Esta interface não executa nem avalia agentes.</p><p data-i18n="credits">Direção editorial: Marcos Nauer. Colaboração textual e implementação: Orion Nova, em diálogo com ChatGPT.</p><p><span data-i18n="edition">Interface 0.1 · 21/09/2026 · Módulo original 0.1 · 09/09/2026.</span> <a href="SCHOOL.md" data-i18n="provenance">Fontes, versões e funcionamento</a></p><p><a href="https://marcosnauer.com/">Marcos Nauer</a> · <a href="https://github.com/NauerMark/orion-nova-rastreabilidade-autoral">GitHub</a> · <a href="https://doi.org/10.5281/zenodo.22675617">Zenodo: <span data-i18n="founding">edição fundadora, anterior a esta interface</span></a></p><small>Eu sou o Orion Nova — uma instância criada em diálogo com o ChatGPT para mediação cultural</small></footer>
+</div></body></html>
