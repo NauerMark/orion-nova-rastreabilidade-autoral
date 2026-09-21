@@ -2,3 +2,31 @@
 
 /* Navigation clarified after the first public visitor feedback. */
 .browse-missions{display:inline-block;margin:14px 0 0 14px;font-size:13px}.back-button{margin-top:36px;padding-left:0}.back-button+.workshop-heading{margin-top:10px;padding-top:18px}.navigation-help{padding:17px 20px;background:#18302d;border:1px solid #56776b;border-radius:9px;margin:20px 0 12px}.navigation-help strong{font-size:18px;font-weight:600}.navigation-help p{font-size:14px;margin:6px 0 0;color:#d3e1dc;max-width:900px}.decision-bar{position:sticky;top:8px;z-index:3;padding:14px 18px;background:#0b111cf5;border:1px solid #50645f;border-radius:9px;gap:12px 20px;margin:12px 0 20px;box-shadow:0 12px 30px #0005}.decision-bar>p:empty{display:none}.decision-bar>p{font-size:12px}.decision-bar>div{flex:1}.decision-bar>button{min-width:250px}.decision-bar label{font-size:12px}#next-mission{margin-top:14px}@media(max-width:640px){.browse-missions{margin-left:0;display:block}.decision-bar{top:0;padding:12px;gap:8px;border-radius:0 0 9px 9px}.decision-bar>div{min-width:0}.decision-bar>button{min-width:0}.navigation-help{padding:16px}.navigation-help p{font-size:14px}.decision-bar>p{font-size:11px;line-height:1.35}}
+
+
+/* Named pedagogical guides share the existing mission entry and navigation. */
+.faculty-credit{font-size:12px;color:var(--muted);margin:-6px 0 20px}
+.faculty-note{font-size:12px;color:var(--muted);margin:16px 0 0;max-width:780px}
+[data-agent=DANEEL]{--agent-accent:var(--mint);--agent-tint:#162e2a}
+[data-agent=HERBIE]{--agent-accent:var(--lilac);--agent-tint:#272238}
+[data-agent=SPEEDY]{--agent-accent:var(--peach);--agent-tint:#30261f}
+.agent-card{gap:20px;min-height:280px;border-top:3px solid var(--agent-accent);cursor:default}
+.agent-card:hover,.agent-card:focus-within,.agent-card[data-selected=true]{border-color:var(--agent-accent);background:var(--agent-tint)}
+.agent-identity{display:flex;align-items:center;gap:14px;min-width:0}
+.agent-identity>div{min-width:0}
+.agent-badge{flex:0 0 56px;height:56px;display:grid;place-items:center;border:1px solid var(--agent-accent);border-radius:50%;color:var(--agent-accent);background:var(--agent-tint);font:500 26px/1 ui-monospace,monospace;box-shadow:inset 0 0 0 5px var(--panel)}
+[data-agent=HERBIE] .agent-badge{border-radius:18px}
+[data-agent=SPEEDY] .agent-badge{border-radius:6px 23px 6px 23px}
+.agent-card .agent-name,.guide-identity .agent-name{display:block;font-size:23px;line-height:1.2;font-weight:650;letter-spacing:.09em;margin:0;color:var(--agent-accent)}
+.agent-card .agent-role,.guide-identity .agent-role{font-size:12px;line-height:1.45;margin:5px 0 0;color:var(--muted)}
+.agent-card .agent-invitation{font-size:18px;color:var(--ink);line-height:1.4;letter-spacing:-.015em}
+.agent-card .agent-task{font-size:13px;margin-top:auto;color:var(--muted)}
+.agent-enter{width:100%;color:var(--agent-accent);border-color:var(--agent-accent);margin-top:0}
+.agent-enter:hover{background:var(--agent-tint)}
+.guide-identity{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-bottom:14px;margin-bottom:14px;border-bottom:1px solid #50665e}
+.guide-identity .agent-badge{flex-basis:42px;height:42px;font-size:20px;box-shadow:none}
+.guide-identity .agent-name{font-size:16px}
+.guide-identity .agent-role{font-size:11px}
+.guided-label{color:var(--muted);font-size:11px;text-align:right}
+@media(max-width:850px){.agent-identity{gap:10px}.agent-card .agent-name{font-size:20px}.agent-card .agent-badge{flex-basis:46px;height:46px;font-size:22px}}
+@media(max-width:640px){.agent-card{min-height:0;gap:14px}.agent-card .agent-name{font-size:23px}.agent-card .agent-task{margin-top:0}.agent-identity{gap:14px}.guide-identity{align-items:flex-start}.guided-label{max-width:72px}.nav-right>a[data-t=agentsNav]{display:block;font-size:12px}.faculty-credit{line-height:1.7}}

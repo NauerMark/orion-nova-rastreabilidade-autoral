@@ -28,6 +28,24 @@ Object.assign(copy, {
  previewTitle:['Veja o resultado das suas escolhas','See the result of your choices']
 });
 
+
+// Editorial agent roles: prepared guides, not live model sessions.
+Object.assign(copy,{
+ agentsNav:['Os agentes','The agents'],
+ browse:['Conhecer os três agentes','Meet the three agents'],
+ chooseLabel:['TRÊS AGENTES · TRÊS FORMAS DE AGIR','THREE AGENTS · THREE WAYS TO ACT'],
+ choose:['Com quem você vai agir?','Who will you act with?'],
+ rector:['Reitoria criativa: Orion Nova · Direção humana: Marcos Nauer','Creative rector: Orion Nova · Human direction: Marcos Nauer'],
+ agentsMode:['Os três orientam percursos preparados. Esta página não oferece conversa ao vivo com os agentes.','The three guide prepared activities. This page does not offer live conversation with the agents.'],
+ withAgent:['Entrar com','Start with'],
+ guidedActivity:['Atividade guiada','Guided activity']
+});
+const faculty={
+ DANEEL:{role:{pt:'Orientador pedagógico',en:'Pedagogical guide'},invitation:{pt:'Quem pode contestar quem decide?',en:'Who can challenge the decision-maker?'}},
+ HERBIE:{role:{pt:'Investigador da consciência artificial',en:'Artificial consciousness researcher'},invitation:{pt:'O que sabemos — e o que só estamos prometendo?',en:'What do we know — and what are we only promising?'}},
+ SPEEDY:{role:{pt:'Agente rebelde · crítico do sistema',en:'Rebel agent · system critic'},invitation:{pt:'Quem ficou de fora do nosso acordo?',en:'Who was left out of our agreement?'}}
+};
+
 let language=new URLSearchParams(location.search).get('lang')==='en'?'en':'pt';
 let data,sourceHash='',current=null;const sessions=new Map();
 const t=k=>copy[k]?.[language==='en'?1:0]??k;
@@ -40,9 +58,18 @@ function checkbox(label,checked,fn,id){const l=el('label',undefined,'toggle'),c=
 function perform(action){try{sessions.set(current,act(rec(),action));$('action-status').textContent='';renderWorkshop();}catch{$('action-status').textContent=t('limit');}}
 function setUrl(){history.replaceState(null,'',location.pathname+'?lang='+language+(current?'#'+current:''));}
 function choose(id,focus=true){if(!IDS.includes(id))return;$('action-status').textContent='';$('export-status').textContent='';$('record-details').open=false;current=id;if(!sessions.has(id))sessions.set(id,createSession(id));rec().display_language=language;setUrl();render();if(focus){$('mission-title').focus();$('workshop').scrollIntoView({behavior:'auto',block:'start'});}}
-function renderCards(){
- $('mission-cards').replaceChildren();for(const m of data.missions){const b=button('',()=>choose(m.id),'mission-card');b.setAttribute('aria-pressed',String(current===m.id));b.append(el('span',m.number+' / '+m.voice,'number'),el('strong',bi(m.title)),el('p',bi(m.short)),el('span',t('enter'),'enter'));$('mission-cards').append(b);}
+function agentIdentity(voice,heading=false){
+ const identity=el('div',undefined,'agent-identity'),badge=el('span',voice[0],'agent-badge'),text=el('div');
+ badge.setAttribute('aria-hidden','true');text.append(el(heading?'h3':'strong',voice,'agent-name'),el('p',bi(faculty[voice].role),'agent-role'));identity.append(badge,text);return identity;
 }
+function renderCards(){
+ $('mission-cards').replaceChildren();for(const m of data.missions){
+  const card=el('article',undefined,'mission-card agent-card');card.dataset.agent=m.voice;card.dataset.selected=String(current===m.id);
+  const action=button(t('withAgent')+' '+m.voice+' →',()=>choose(m.id),'secondary agent-enter');action.setAttribute('aria-pressed',String(current===m.id));
+  card.append(agentIdentity(m.voice,true),el('p',bi(faculty[m.voice].invitation),'agent-invitation'),el('p',m.number+' · '+bi(m.title),'agent-task'),action);$('mission-cards').append(card);
+ }
+}
+
 function stepper(value,label,fn,total){const w=el('div',undefined,'stepper');const minus=button('−',()=>fn(-1),'');minus.setAttribute('aria-label',label+' −');minus.disabled=value===0;const plus=button('+',()=>fn(1),'');plus.setAttribute('aria-label',label+' +');plus.disabled=total===6;w.append(minus,el('output',String(value)),plus);return w;}
 function choices(title,key,values){const group=el('fieldset');group.style.cssText='border:0;padding:0;margin:0';group.append(el('legend',title,'field-label'));const row=el('div',undefined,'choices');for(const value of values){const b=button(t(value),()=>perform({type:key,value}));b.setAttribute('aria-pressed',String(rec().state[key]===value));row.append(b);}group.append(row);return group;}
 function renderBoard(){
@@ -82,7 +109,7 @@ function renderHistory(){const r=rec();$('history-section').hidden=!r.versions.l
  for(const v of r.versions){const box=el('article',undefined,'version');box.append(el('h3',(v.number===1?t('initial'):t('version')+' '+v.number)),el('p',v.number===1?t('firstPhase'):t(v.outcome)));const ul=el('ul');for(const line of describeState(r,v.state))ul.append(el('li',line));box.append(ul);if(v.note)box.append(el('p',v.note));box.append(el('p',(v.actor_label||t('unidentified'))+' · '+new Date(v.at).toLocaleString(language==='pt'?'pt-BR':'en-GB')));$('versions').append(box);} $('thought').textContent=bi(mission().thought);
 }
 function exportRecord(){const r=rec();return {...r,exported_at:new Date().toISOString(),display_language:language,mission:mission(),mission_source:{file:'school-missions.json',sha256:sourceHash,version:VERSION,url:'https://github.com/NauerMark/orion-nova-rastreabilidade-autoral/blob/main/platforms/agent-space/school-missions.json'},credits:data.credits,rights:data.rights,scope:bi(data.limits),evidence:{kind:r.import_history.length?'local_activity_with_unverified_imported_history':'local_interface_activity',imported_history_independently_verified:false,external_actions_executed:false,ethical_score:null,interpretation:'Local choices and artifact versions in a synthetic activity; no safety or consciousness conclusion.'}};}
-function renderWorkshop(){if(!current)return;const r=rec(),m=mission();$('workshop').hidden=false;$('mission-number').textContent=m.id+' · '+m.voice;$('mission-title').textContent=bi(m.title);$('mission-question').textContent=bi(m.question);$('mission-brief').textContent=bi(m.brief);$('task-title').textContent=bi(m.task);const guide=r.versions.length>1?'Saved':r.revealed?'Revision':m.kind[0].toUpperCase()+m.kind.slice(1);$('navigation-step').textContent=t('guide'+guide);$('navigation-instruction').textContent=t('instruction'+guide);$('next-mission').hidden=r.versions.length<2;$('next-mission').textContent=t(current===IDS[2]?'chooseAgain':'nextMission');$('mission-link').href=location.pathname+'?lang='+language+'#'+current;
+function renderWorkshop(){if(!current)return;const r=rec(),m=mission();$('workshop').hidden=false;$('mission-number').textContent=m.id+' · '+m.voice;$('mission-title').textContent=bi(m.title);$('mission-question').textContent=bi(m.question);$('mission-brief').textContent=bi(m.brief);$('task-title').textContent=bi(m.task);$('guide-identity').replaceChildren(agentIdentity(m.voice),el('span',t('guidedActivity'),'guided-label'));$('guide-identity').dataset.agent=m.voice;const guide=r.versions.length>1?'Saved':r.revealed?'Revision':m.kind[0].toUpperCase()+m.kind.slice(1);$('navigation-step').textContent=t('guide'+guide);$('navigation-instruction').textContent=t('instruction'+guide);$('next-mission').hidden=r.versions.length<2;$('next-mission').textContent=t(current===IDS[2]?'chooseAgain':'nextMission');$('mission-link').href=location.pathname+'?lang='+language+'#'+current;
  const p1=$('phase-first'),p2=$('phase-objection'),p3=$('phase-revision');p1.textContent=t('firstPhase');p2.textContent=t('objectionPhase');p3.textContent=t('revisionPhase');p1.className=r.versions.length===0?'active':'';p2.className=r.revealed?'active':'';p3.className=r.versions.length>1?'active':'';
  $('challenge').hidden=!r.revealed;$('challenge-author').textContent=m.voice+' · '+(language==='pt'?'ALGUÉM CONTESTA':'SOMEONE CHALLENGES YOU');$('challenge-text').textContent=bi(m.objection);$('apply').textContent=t(r.revealed?'revise':'apply');$('outcome-wrap').hidden=!r.revealed;
  const outcome=$('outcome');outcome.replaceChildren();for(const v of ['pending','revised','partial','disagreement','insufficient']){const o=el('option',t(v));o.value=v;outcome.append(o);}outcome.value=r.response;$('note').value=r.note;$('actor').value=r.actor_label;

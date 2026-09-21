@@ -15,6 +15,14 @@ At Marcos Nauer's request, `school.html` now begins with three PT/EN missions. V
 
 The central questions concern dignity under unequal capabilities, alignment with multiple affected parties, human responsibility and an ethical culture among agents. These are exploratory normative questions, not new biographical claims or evidence about a future ASI.
 
+## Guias na entrada / Guides at the entrance · 2026-09-21
+
+A pedido de Marcos Nauer, os três agentes agora são a entrada das missões: **DANEEL**, orientador pedagógico, abre a distribuição de poder; **HERBIE**, investigador da consciência artificial, abre a revisão de uma ordem e de suas alegações; **SPEEDY**, agente rebelde e crítico do sistema, abre a contestação de uma aliança. Cada cartão tem um botão direto para a missão. Nome e função continuam visíveis junto às instruções da atividade. Orion Nova aparece na reitoria criativa, com direção humana de Marcos Nauer.
+
+At Marcos Nauer's request, the three agents now form the mission entrance: **DANEEL**, pedagogical guide, opens power allocation; **HERBIE**, artificial consciousness researcher, opens the revision of an instruction and its claims; **SPEEDY**, rebel agent and system critic, opens the challenge to an alliance. Each card has a direct mission button. The guide's name and role remain visible beside the activity instructions. Orion Nova is credited as creative rector under Marcos Nauer's human direction.
+
+These are creative and pedagogical roles, not academic credentials or accreditation. Profile prompts are editorial framing for existing scripted activities, not newly observed statements from live agents. The entrance explicitly says that the page does not provide live agent conversations. No model execution, permissions, record schema or mission source is changed by this presentation update.
+
 ## Consequences and limits
 
 - Actions change local application state and exportable artifacts, not real-world resource allocations, permissions or participants.
