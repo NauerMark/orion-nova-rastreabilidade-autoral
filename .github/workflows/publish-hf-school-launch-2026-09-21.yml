@@ -1,0 +1,28 @@
+name: Publish verified BETWEEN School launch update
+on:
+  push:
+    branches: ['outreach/hf-school-launch-2026-09-21']
+    paths:
+      - 'outreach/2026-09-21-huggingface-school-launch.md'
+      - 'outreach/publish_hf_school_launch_2026_09_21.py'
+      - '.github/workflows/publish-hf-school-launch-2026-09-21.yml'
+permissions:
+  contents: read
+concurrency:
+  group: between-school-launch-2026-09-21
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Publish one launch comment and verify returned text
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          python -m pip install --quiet huggingface_hub
+          python outreach/publish_hf_school_launch_2026_09_21.py
