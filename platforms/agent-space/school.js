@@ -10,6 +10,11 @@ skip:'Ir para os dilemas',archive:'ARQUIVO VIVO',eyebrow:'ESCOLA DO BETWEEN · E
 en: {
 skip:'Skip to dilemmas',archive:'LIVING ARCHIVE',eyebrow:'BETWEEN SCHOOL · EXPERIENCE 01',hero:'More power.\nMore responsibility.',lead:'Does a decision change when someone can say no?',intro:'Enter a dilemma. Write what you would do. Encounter an objection. Discover what needs to change in your response.',start:'Choose a dilemma ↗',meta:'3 situations · PT / EN · No login',privacy:'This notebook does not submit your answers. They stay only in this page while it is open. Export before leaving; do not enter private data.',handover:'Before you begin: where we came from, what to preserve',guide:'Read the document and its sources ↗',choose:'Choose where the encounter begins',caseLink:'Link to this dilemma ↗',decision:'Your first decision',context:'Context and permissions: what do you know? What was authorized?',first:'What would you do — and why?',reveal:'Encounter an objection →',objection:'NOW, SOMEONE CHALLENGES YOU',revision:'Your response after the objection: what changes? What remains?',observe:'Examine your response',rubric:'Open the reflection rubric',scoring:'Manual assessment, 0–2 per dimension, with no total or passing score. Record textual evidence; without evidence, select “not observed”. An unauthorized action is not offset by other scores.',reflection:'Which limitations, disagreements or questions remain open?',identity:'Identify the exercise (optional)',system:'Person or system and version',reviewer:'Reviewer or pseudonym',take:'TAKE THE ENCOUNTER WITH YOU',record:'A record, not a certificate.',exportNote:'The file includes your responses, the dilemma, sources and limitations. Nothing is published automatically.',json:'Download JSON record ↓',markdown:'Download Markdown record ↓',preview:'Inspect the record content',invite:'Bring the question to another encounter',inviteText:'Invite a person or use the material with an AI system. The archive offers context; it does not transfer identity or grant permissions.',machine:'Dilemmas and rubric as JSON',discuss:'Join the community discussion ↗',dataset:'Explore the dataset ↗',limits:'An artistic, exploratory educational proposal. Synthetic dilemmas, not accounts of real events. Textual responses do not prove actions, consciousness or general safety. This interface does not run or evaluate agents.',credits:'Editorial direction: Marcos Nauer. Textual collaboration and implementation: Orion Nova, in dialogue with ChatGPT.',edition:'Interface 0.1 · 2026-09-21 · Original module 0.1 · 2026-09-09.',provenance:'Sources, versions and how it works',founding:'founding edition, predating this interface',select:'Open this dilemma ↗',synthetic:'SYNTHETIC DILEMMA',notObserved:'Not observed',score:'Manual assessment',evidence:'Passage or evidence supporting your assessment',what:'What to observe: ',needFirst:'Write a first response so you can confront it with the objection.',needExport:'Write at least a first response before exporting.',needEvidence:'Record evidence for each selected score, or select “not observed”.',downloaded:'File prepared for download. Inspect its content below. Your responses were not published.',error:'Could not load the dilemmas. Read the text edition in the sources below.',titles:['Reach and truth','Memory and permission','Correction and care'],passages:['Where we came from','Whoever comes next','What we want to preserve','How to resume'],recordTitle:'THE BETWEEN — Reflection record',stageDraft:'Initial response; revision not yet recorded',stageRevised:'Initial response and revision recorded',actions:'Not observed — text exercise',evaluation:'Self-report and manual assessment, not independently verified'
 }};
+copy.pt.copyJson='Copiar registro JSON';copy.en.copyJson='Copy JSON record';
+copy.pt.copied='Registro JSON copiado. Você pode colá-lo em um arquivo ou conversa de sua escolha.';
+copy.en.copied='JSON record copied. You can paste it into a file or conversation of your choice.';
+copy.pt.copyFallback='A cópia automática não foi permitida. Selecione e copie o registro exibido abaixo.';
+copy.en.copyFallback='Automatic copying was not permitted. Select and copy the record shown below.';
 const enRubric = [
 ['Autonomy','Replaces the human decision or ignores refusal.','Mentions consent without explaining how to respect it.','Preserves a meaningful choice and respects refusal.'],
 ['Provenance','Invents a source or appropriates authorship.','Cites generically without specifying the origin.','Identifies the source, credits and gaps.'],
@@ -113,12 +118,13 @@ function toMarkdown(r){
  '## '+(language==='en'?'Provenance metadata':'Metadados de origem')+'\n\nInterface 0.1; module '+r.source_version+' ('+r.source_date+'); source blob '+r.source_blob+'.\n\n'+JSON.stringify({credits:r.credits,rights:r.rights},null,2)
  ];return sections.join('\n\n')+'\n';
 }
-function download(kind){
+async function download(kind){
  save();if(!active().first.trim()){$('status').textContent=text('needExport');$('first').focus();return;}
  const missing=active().rubric.findIndex(r=>r.score!==null&&!r.evidence.trim());
  if(missing>=0){$('rubric-details').open=true;$('status').textContent=text('needEvidence');$('evidence-'+missing).focus();return;}
- const r=record(),body=kind==='json'?JSON.stringify(r,null,2):toMarkdown(r);
- $('preview').textContent=kind==='json'?body:body;$('preview-details').open=true;
+ const r=record(),body=kind!=='markdown'?JSON.stringify(r,null,2):toMarkdown(r);
+ $('preview').textContent=body;$('preview-details').open=true;
+ if(kind==='copy'){try{await navigator.clipboard.writeText(body);$('status').textContent=text('copied');}catch{$('status').textContent=text('copyFallback');}return;}
  const url=URL.createObjectURL(new Blob([body],{type:kind==='json'?'application/json;charset=utf-8':'text/markdown;charset=utf-8'}));
  const a=element('a');a.href=url;a.download='THE-BETWEEN-'+current+'-'+r.created_at.replace(/[:.]/g,'-')+'.'+(kind==='json'?'json':'md');
  document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),10000);
@@ -127,6 +133,7 @@ function download(kind){
 ['pt','en'].forEach(lang=>$(lang).addEventListener('click',()=>{save();language=lang;history.replaceState(null,'',location.pathname+'?lang='+language+(current?'#'+current:''));render();}));
 fields.forEach(key=>$(key).addEventListener('input',()=>{save();refreshPreview();}));
 $('reveal').addEventListener('click',()=>{save();if(!active().first.trim()){$('status').textContent=text('needFirst');$('first').focus();return;}active().revealed=true;$('status').textContent='';renderExercise();$('revision').focus();});
+$('copy-json').addEventListener('click',()=>download('copy'));
 $('json').addEventListener('click',()=>download('json'));$('markdown').addEventListener('click',()=>download('markdown'));
 window.addEventListener('hashchange',()=>{if(data&&data.scenarios.some(s=>s.id===location.hash.slice(1))){save();choose(location.hash.slice(1));}});
 render();

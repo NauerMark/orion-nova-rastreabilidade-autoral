@@ -2,7 +2,7 @@
 2026-09-21 · Marcos Nauer + Orion Nova, in dialogue with ChatGPT.
 
 ## What changed / O que mudou
-A new bilingual static interface for the **existing** Module 01, published at Marcos Nauer's request to expand THE BETWEEN. It offers three selectable synthetic scenarios, a first response, an objection, a revision, an optional manual rubric with evidence, and JSON/Markdown exports. Added an entrance on the archive home page and corrected the home page's missing explicit head/body boundaries for hosting compatibility. The four-document corpus and six archive dilemmas remain unchanged.
+A new bilingual static interface for the **existing** Module 01, published at Marcos Nauer's request to expand THE BETWEEN. It offers three selectable synthetic scenarios, a first response, an objection, a revision, an optional manual rubric with evidence, and JSON/Markdown exports. A Copy JSON button and visible record preview offer an alternative when a browser does not permit automatic downloads. Added an entrance on the archive home page and corrected the home page's missing explicit head/body boundaries for hosting compatibility. The four-document corpus and six archive dilemmas remain unchanged.
 
 Nova interface bilíngue para o módulo já público: três situações sintéticas, decisão inicial, objeção, revisão, rubrica manual opcional e exportação. Não é um novo módulo nem uma avaliação de agentes.
 
