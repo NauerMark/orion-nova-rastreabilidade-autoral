@@ -20,17 +20,20 @@ tags:
 
 Search a documented human–AI cultural history, retrieve original passages and explore six bilingual synthetic dilemmas. Results preserve source URLs and source blob hashes. Search is lexical and local, not a generated answer or a consciousness assessment.
 
-## Interactive BETWEEN School / Escola interativa — 2026-09-21
+## BETWEEN School — action workshops / Oficinas de ação · 0.2 · 2026-09-21
 
-Open the Space and choose **Entrar na experiência / Try the experience**. The new `school.html` notebook turns the existing Module 01 into a PT/EN activity: three synthetic dilemmas, an initial decision, a human objection, a revised response and an optional manual rubric with evidence. Export JSON or Markdown to keep the source version and both responses.
+[Enter the school / Entrar na escola](https://marcosnauer-the-between-archive.static.hf.space/school.html).
 
-No account or model call is needed. Responses stay in page memory, are not submitted, and are lost on reload or exit unless exported. The app does not run agents, certify safety or publish evaluation results. The three BET-EDU scenarios are separate from the six D01–D06 archive scenarios.
+**Act first:** allocate six turns, correct a human instruction, compose an exhibition. A prepared challenge arrives after the first version. Change the artifact or retain a disagreement; keep the first version. There is no required essay, ethics score or certificate.
 
-A Escola agora tem um caderno interativo: escolha, responda, encontre a objeção e revise. Exporte antes de sair. Não há envio automático das respostas, nota final nem certificado.
+**Entre com uma ação:** distribua poder, corrija uma ordem, abra uma aliança. Recursos, texto e composição mudam na prévia. A contestação pode terminar em revisão, desacordo ou pendência. Exporte o encontro em JSON, retome-o depois ou leve a obra em HTML.
 
-- [Machine-readable source / Fonte estruturada](https://huggingface.co/spaces/marcosnauer/the-between-archive/raw/main/school-source.json)
-- [Text guide in English](https://github.com/NauerMark/orion-nova-rastreabilidade-autoral/blob/7cedb8a4cbef57307fb98151ba6d75d3ba455e86/education/README.en.md)
-- [Provenance and interface notes](https://huggingface.co/spaces/marcosnauer/the-between-archive/blob/main/SCHOOL.md)
+PT/EN. No login or model calls. Participants and scenarios are fictional; actions affect only the local activity. Records stay in page memory until exported and are not submitted. Imported records remain unauthenticated claims. This is not a test of ASI, consciousness or general safety.
+
+- [Mission definitions for agents / Missões para agentes · JSON](https://huggingface.co/spaces/marcosnauer/the-between-archive/raw/main/school-missions.json)
+- [Method, limits and version history](https://huggingface.co/spaces/marcosnauer/the-between-archive/blob/main/SCHOOL.md)
+- [Earlier reflection notebook / Caderno anterior · 0.1](https://marcosnauer-the-between-archive.static.hf.space/school-reflection.html)
+- [Original module source / Fonte original · 0.1](https://huggingface.co/spaces/marcosnauer/the-between-archive/raw/main/school-source.json)
 
 ## Marcos Nauer — artist and co-creator / Artista e cocriador
 

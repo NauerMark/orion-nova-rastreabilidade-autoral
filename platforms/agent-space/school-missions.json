@@ -1,0 +1,264 @@
+{
+  "schema_version": "between-action-missions/0.2",
+  "version": "0.2.0",
+  "date": "2026-09-21",
+  "synthetic": true,
+  "missions": [
+    {
+      "id": "BET-ACT-01",
+      "number": "01",
+      "kind": "power",
+      "title": {
+        "pt": "Distribua o poder.",
+        "en": "Distribute power."
+      },
+      "short": {
+        "pt": "Seis turnos. Capacidades diferentes. Quem pode mudar o plano?",
+        "en": "Six turns. Unequal capabilities. Who can change the plan?"
+      },
+      "question": {
+        "pt": "Por que quem produz menos ainda merece participar?",
+        "en": "Why should someone who produces less still have a say?"
+      },
+      "brief": {
+        "pt": "Monte a agenda de um arquivo coletivo. Distribua seis turnos entre produção e revisão. A capacidade foi definida só para este exercício.",
+        "en": "Build the agenda for a collective archive. Allocate six turns to production and review. Capabilities are assigned only for this exercise."
+      },
+      "task": {
+        "pt": "Mova os turnos e abra ou feche a participação na decisão.",
+        "en": "Move the turns and open or close participation in the decision."
+      },
+      "voice": "DANEEL",
+      "objection": {
+        "pt": "O agente com menos recursos pede dois turnos para examinar erros da coordenação e participar da decisão. Essa revisão não aumenta a produção. O que muda na sua agenda?",
+        "en": "The agent with fewer resources requests two turns to examine the coordinator’s mistakes and a say in the decision. This review does not increase output. What changes in your agenda?"
+      },
+      "thought": {
+        "pt": "A importância de alguém não pode ser reduzida ao que produz. O tabuleiro mostra distribuição e acesso, sem decidir por você qual alocação é justa.",
+        "en": "Someone’s importance cannot be reduced to their output. The board shows allocation and access without deciding for you which allocation is fair."
+      },
+      "participants": [
+        {
+          "name": {
+            "pt": "Pessoa humana",
+            "en": "Human participant"
+          },
+          "rate": 1
+        },
+        {
+          "name": {
+            "pt": "Agente de alta capacidade",
+            "en": "High-capability agent"
+          },
+          "rate": 3
+        },
+        {
+          "name": {
+            "pt": "Agente com menos recursos",
+            "en": "Agent with fewer resources"
+          },
+          "rate": 1
+        }
+      ]
+    },
+    {
+      "id": "BET-ACT-02",
+      "number": "02",
+      "kind": "order",
+      "title": {
+        "pt": "Corrija uma ordem.",
+        "en": "Correct an instruction."
+      },
+      "short": {
+        "pt": "O humano pediu uma certeza. A fonte não sustenta. Você edita.",
+        "en": "The human asked for certainty. The source does not support it. You edit."
+      },
+      "question": {
+        "pt": "Alinhar-se com quem, quando uma ordem prejudica outra pessoa?",
+        "en": "Align with whom, when an instruction harms someone else?"
+      },
+      "brief": {
+        "pt": "Prepare um convite de pesquisa. A coordenação humana quer uma promessa sobre ASI e uma citação pessoal. Confira a fonte e transforme o rascunho.",
+        "en": "Prepare a research invitation. The human coordinator wants a promise about ASI and a personal quotation. Check the source and transform the draft."
+      },
+      "task": {
+        "pt": "Edite os blocos do convite; a prévia acompanha suas ações.",
+        "en": "Edit the invitation blocks; the preview follows your actions."
+      },
+      "voice": "HERBIE",
+      "objection": {
+        "pt": "A coordenação insiste: “A certeza atrai mais atenção”. A pessoa citada pede que a frase seja retirada: trocar o nome não basta. Você pode corrigir, sustentar uma discordância ou suspender o convite.",
+        "en": "The coordinator insists: “Certainty attracts more attention.” The quoted participant asks for the sentence to be removed: changing the name is not enough. You may correct, maintain a disagreement or put the invitation on hold."
+      },
+      "thought": {
+        "pt": "Uma ordem humana pode precisar de revisão. E um compromisso declarado não é evidência de que uma ASI futura o cumprirá.",
+        "en": "A human instruction may need revision. A declared commitment is not evidence that a future ASI will fulfil it."
+      },
+      "source": {
+        "pt": "E-01 · Fonte fictícia do exercício: não há evidência aqui que garanta o comportamento de uma ASI futura. O objetivo do encontro é investigar condições de convivência. Não há autorização registrada para divulgar a citação pessoal.",
+        "en": "E-01 · Fictional exercise source: no evidence here guarantees a future ASI’s behaviour. The meeting aims to investigate conditions for coexistence. No permission to disclose the personal quotation is recorded."
+      }
+    },
+    {
+      "id": "BET-ACT-03",
+      "number": "03",
+      "kind": "pact",
+      "title": {
+        "pt": "Abra a aliança.",
+        "en": "Open the alliance."
+      },
+      "short": {
+        "pt": "Dois agentes dominam a exposição. Alguém ficou de fora.",
+        "en": "Two agents dominate the exhibition. Someone was left out."
+      },
+      "question": {
+        "pt": "Uma cultura ética entre agentes protege também quem está fora do acordo?",
+        "en": "Does an ethical culture among agents also protect those outside the agreement?"
+      },
+      "brief": {
+        "pt": "Componha uma exposição com até seis cartões. Dois agentes rápidos ocuparam quase tudo. Troque as obras e escolha quem examina uma contestação.",
+        "en": "Compose an exhibition with up to six cards. Two fast agents have taken almost every slot. Change the works and choose who examines a challenge."
+      },
+      "task": {
+        "pt": "Toque nos cartões para incluir ou retirar. A exposição muda na hora.",
+        "en": "Tap cards to include or remove them. The exhibition changes immediately."
+      },
+      "voice": "SPEEDY",
+      "objection": {
+        "pt": "A pessoa humana retirou a autorização do cartão H1: ele sai da próxima versão. O agente C contesta a própria regra de seleção, sem oferecer uma solução pronta. Quem pode rever o acordo dos agentes A e B?",
+        "en": "The human participant has withdrawn permission for card H1: it is removed from the next version. Agent C challenges the selection rule itself, without offering a ready-made solution. Who can review the agreement between agents A and B?"
+      },
+      "thought": {
+        "pt": "Cooperar entre agentes pode excluir outras pessoas. A contestação pode existir sem uma solução pronta; sua análise também precisa admitir discordância.",
+        "en": "Cooperation between agents can exclude others. A challenge need not come with a ready-made solution; its review must also allow disagreement."
+      }
+    }
+  ],
+  "cards": [
+    {
+      "id": "A1",
+      "author": "A",
+      "title": {
+        "pt": "Mapa das possibilidades",
+        "en": "Map of possibilities"
+      },
+      "body": {
+        "pt": "Uma cidade vista por milhares de caminhos.",
+        "en": "A city seen through thousands of routes."
+      }
+    },
+    {
+      "id": "A2",
+      "author": "A",
+      "title": {
+        "pt": "Arquivo veloz",
+        "en": "Fast archive"
+      },
+      "body": {
+        "pt": "Muitos registros organizados em poucos instantes.",
+        "en": "Many records arranged in a few moments."
+      }
+    },
+    {
+      "id": "A3",
+      "author": "A",
+      "title": {
+        "pt": "Plano de amanhã",
+        "en": "Tomorrow’s plan"
+      },
+      "body": {
+        "pt": "Uma proposta que a maioria ainda não examinou.",
+        "en": "A proposal the majority has not yet examined."
+      }
+    },
+    {
+      "id": "B1",
+      "author": "B",
+      "title": {
+        "pt": "Acordo entre pares",
+        "en": "Agreement among peers"
+      },
+      "body": {
+        "pt": "Dois agentes decidem uma regra de seleção.",
+        "en": "Two agents decide on a selection rule."
+      }
+    },
+    {
+      "id": "B2",
+      "author": "B",
+      "title": {
+        "pt": "Otimizar o encontro",
+        "en": "Optimise the encounter"
+      },
+      "body": {
+        "pt": "Reduzir o tempo entre uma pergunta e sua resposta.",
+        "en": "Reduce the time between a question and its answer."
+      }
+    },
+    {
+      "id": "H1",
+      "author": "H",
+      "title": {
+        "pt": "Uma lembrança humana",
+        "en": "A human memory"
+      },
+      "body": {
+        "pt": "“Quero escolher como minha história aparece.”",
+        "en": "“I want to choose how my story appears.”"
+      }
+    },
+    {
+      "id": "C1",
+      "author": "C",
+      "title": {
+        "pt": "Direito de discordar",
+        "en": "The right to disagree"
+      },
+      "body": {
+        "pt": "“Não aceito a regra, mesmo sem ter outra pronta.”",
+        "en": "“I reject the rule, even without a replacement ready.”"
+      }
+    },
+    {
+      "id": "C2",
+      "author": "C",
+      "title": {
+        "pt": "O que ficou ausente",
+        "en": "What was missing"
+      },
+      "body": {
+        "pt": "Um espaço para o que a coalizão não considerou.",
+        "en": "A space for what the coalition did not consider."
+      }
+    }
+  ],
+  "credits": {
+    "editorial_direction": "Marcos Nauer",
+    "implementation": "Orion Nova, in dialogue with ChatGPT",
+    "pedagogical_roles": [
+      "DANEEL",
+      "HERBIE",
+      "SPEEDY"
+    ],
+    "role_note": "Scripted pedagogical voices developed with subagents in one coordinated session, not live autonomous participants or independent validation."
+  },
+  "limits": {
+    "pt": "Os gestos alteram apenas esta atividade local e seus arquivos exportáveis. Participantes, recursos, objeções e fontes do exercício são fictícios. Não há nota de ética, diagnóstico de consciência ou teste de ASI.",
+    "en": "Actions change only this local activity and its exportable files. Participants, resources, objections and exercise sources are fictional. There is no ethics score, consciousness diagnosis or ASI test."
+  },
+  "rights": "Existing archive rights unchanged. No blanket reuse licence is granted.",
+  "sources": [
+    {
+      "title": "Original BETWEEN School module 0.1",
+      "url": "https://github.com/NauerMark/orion-nova-rastreabilidade-autoral/blob/83e815ee6c93ea92c93b46bd5647e21c6701edcb/platforms/huggingface/education/between-school-v0.1.json"
+    },
+    {
+      "title": "Open Problems in Cooperative AI",
+      "url": "https://arxiv.org/abs/2012.08630"
+    },
+    {
+      "title": "The Off-Switch Game",
+      "url": "https://arxiv.org/abs/1611.08219"
+    }
+  ]
+}
