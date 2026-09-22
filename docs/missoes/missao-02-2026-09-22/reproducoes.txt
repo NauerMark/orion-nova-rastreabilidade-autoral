@@ -1,0 +1,5 @@
+Antes de guardar: 500 eventos; retomável: 500
+Após guardar pela própria API: 502 eventos; 1 versão
+retomada rejeitada: Invalid record
+{"eventos":500,"versoes":50,"caracteres":407174}
+Retomada rejeitada: Record too large
