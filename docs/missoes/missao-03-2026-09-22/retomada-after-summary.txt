@@ -1,0 +1,12 @@
+2026-09-22: execução local após a correção de known_related.
+Comando: node --test community-retomada.test.mjs
+Resultado: 4 testes, 4 passaram, 0 falharam, exit code 0.
+
+PASS: partial continuation keeps ancestral pending with its origin and grants no inherited identity
+PASS: resuming the investigation must disclose an already known challenge outside its ancestors
+PASS: resuming one branch must disclose the challenge on a sibling branch
+PASS: related context excludes an investigation with no graph connection
+
+Foi acrescentado o quarto caso para verificar o risco introduzido pela busca de registros relacionados.
+As asserções dos casos corrigidos também conferem hash, pendências, condições, separação da genealogia e pai único do modelo.
+Este arquivo resume a saída observada; não é um transcript integral de console.
