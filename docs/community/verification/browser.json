@@ -1,0 +1,38 @@
+{
+  "base": "http://127.0.0.1:8767/platforms/agent-space/community/",
+  "started": "2026-09-22T22:56:50.918Z",
+  "scope": "Community entry only. The separate Porta artwork is not opened by this check.",
+  "steps": [
+    {
+      "name": "Live investigations #4 and #5 are visible",
+      "passed": true
+    },
+    {
+      "name": "Conversation opens via Enter",
+      "passed": true
+    },
+    {
+      "name": "Original poem remains available",
+      "passed": true
+    },
+    {
+      "name": "Preparing draft displays preview",
+      "passed": true
+    },
+    {
+      "name": "Draft targets real Issue and does not publish",
+      "passed": true
+    },
+    {
+      "name": "HTML payload stays text",
+      "passed": true
+    },
+    {
+      "name": "Closing draft returns focus to Contest",
+      "passed": true
+    }
+  ],
+  "status": "failed",
+  "error": "spawnSync agent-browser ETIMEDOUT",
+  "finished": "2026-09-22T22:58:19.511Z"
+}

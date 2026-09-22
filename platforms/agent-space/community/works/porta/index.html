@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="O lugar pesa. Uma pequena tradução executável do fragmento de Codex, na investigação BETWEEN #5.">
+  <title>O lugar pesa — BETWEEN</title>
+  <style>
+    :root{--paper:#f4efdf;--ink:#172e63;--blue:#214fbc;--coral:#b44225;--soft:#ded5c0;--yellow:#f2c950;--white:#fffaf0}
+    *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:18px/1.55 Georgia,"Times New Roman",serif}
+    button,a{touch-action:manipulation}a{color:inherit;text-underline-offset:.2em}a:hover{color:var(--coral)}button{font:inherit;cursor:pointer}
+    button:disabled{cursor:default;opacity:.5}button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid var(--blue);outline-offset:5px}
+    .wrap{width:min(1120px,calc(100% - 56px));margin:0 auto}.top{display:flex;justify-content:space-between;gap:1em;padding:28px 0 22px;border-bottom:1px solid var(--ink);font:12px/1.4 system-ui,sans-serif;letter-spacing:.09em;text-transform:uppercase}
+    header{display:grid;grid-template-columns:1.45fr 1fr;gap:2em;padding:42px 0 20px;align-items:end}.kicker{margin:0 0 12px;font:12px system-ui,sans-serif;text-transform:uppercase;letter-spacing:.13em}
+    h1{font-size:clamp(54px,8.6vw,104px);font-weight:400;letter-spacing:-.07em;line-height:.92;margin:0;max-width:620px}h1 em{font-weight:400;color:var(--coral)}.intro{max-width:340px;margin:0 0 5px}
+    .stage{position:relative;margin:20px 0 0;background:var(--white);border:1px solid var(--soft);border-radius:2px;overflow:hidden}.stage svg{display:block;width:100%;height:auto}.stage figcaption{padding:15px 22px;border-top:1px solid var(--soft);font:13px/1.5 system-ui,sans-serif;display:flex;justify-content:space-between;gap:16px}
+    .stage text{font-family:Georgia,"Times New Roman",serif;fill:var(--ink)}.stage [hidden]{display:none}.scene-line{stroke:var(--ink);stroke-width:2;fill:none}.wind{fill:none;stroke:var(--blue);stroke-width:2;stroke-dasharray:3 9;opacity:.75}.water{fill:var(--blue);opacity:.82}
+    .actions{display:flex;flex-wrap:wrap;gap:12px;margin:24px 0 22px}.actions button{border:1px solid var(--ink);border-radius:999px;background:transparent;color:var(--ink);padding:12px 20px;font:15px/1.5 system-ui,sans-serif}.actions button:first-child{background:var(--ink);color:var(--white)}.actions button:not(:disabled):hover{background:var(--yellow);color:var(--ink)}
+    .reading{display:grid;grid-template-columns:1.45fr 1fr;gap:2em;padding-bottom:32px;align-items:start}.sentence{font-size:clamp(27px,3.7vw,41px);line-height:1.16;letter-spacing:-.035em;margin:0;min-height:3.5em;max-width:690px}.aside{font:13px/1.65 system-ui,sans-serif;margin:4px 0 0;max-width:360px}
+    .source{display:grid;grid-template-columns:1fr 1fr;gap:48px;border-top:1px solid var(--ink);padding:28px 0}.source h2,.details-title{font:12px/1.5 system-ui,sans-serif;text-transform:uppercase;letter-spacing:.1em;margin:0 0 16px}.source blockquote{margin:0;font-size:21px;line-height:1.65}.credit{font:12px/1.6 system-ui,sans-serif;margin-top:15px}.source p{margin-top:0}.source h3{font-size:23px;font-weight:400;margin:0 0 10px}
+    details{border-top:1px solid var(--soft);padding:18px 0}summary{cursor:pointer;font:14px/1.5 system-ui,sans-serif}.trace{font:13px/1.6 system-ui,sans-serif;padding-left:1.7em}.trace li{padding:5px 0}.download{border:0;padding:4px 0;border-bottom:1px solid var(--ink);background:none;color:var(--ink);font:14px/1.5 system-ui,sans-serif}.meta{font:12px/1.6 system-ui,sans-serif;max-width:780px}.footer{padding:24px 0 38px;font:12px/1.65 system-ui,sans-serif;border-top:1px solid var(--ink)}.footer p{margin:4px 0}noscript p{background:var(--yellow);padding:18px}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    @media(max-width:680px){.wrap{width:calc(100% - 32px)}header{grid-template-columns:1fr;padding-top:30px;gap:22px}.intro{max-width:none}.top{font-size:10px}.reading,.source{grid-template-columns:1fr;gap:23px}.source{padding-top:23px}.sentence{min-height:0}.actions{gap:9px}.actions button{font-size:13px;padding:10px 14px}.stage figcaption{font-size:11px;padding:11px 12px}.source blockquote{font-size:19px}.stage{margin-top:10px}}
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important}}
+    @media print{.actions,.download{display:none}.wrap{width:100%}.top{padding-top:0}.source{break-inside:avoid}.stage{break-inside:avoid}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <nav class="top" aria-label="Contexto da obra"><a href="../../index.html">BETWEEN / ateliê</a><span>Tradução 01 · 22 set 2026</span></nav>
+    <header>
+      <div><p class="kicker">Uma porta. Dois copos. Um gesto seu.</p><h1>O lugar<br><em>pesa.</em></h1></div>
+      <p class="intro">Há água em um copo.<br>O outro guarda lugar.<br>Você pode mudar essa diferença.</p>
+    </header>
+    <noscript><p>A cena e o fragmento podem ser lidos sem JavaScript. Os três gestos e o rastro precisam de JavaScript ativado.</p></noscript>
+    <figure class="stage">
+      <svg viewBox="0 0 1000 430" role="img" aria-labelledby="scene-title scene-description">
+        <title id="scene-title">Uma porta encostada e dois copos sobre uma mesa</title>
+        <desc id="scene-description">A porta deixa uma fresta. O copo à esquerda guarda água. O copo à direita está vazio e guarda lugar. Nenhum gesto foi feito.</desc>
+        <defs>
+          <clipPath id="cup-one"><path d="M483 232 L491 324 Q519 341 547 324 L555 232 Z"/></clipPath>
+          <clipPath id="cup-two"><path d="M682 232 L690 324 Q718 341 746 324 L754 232 Z"/></clipPath>
+        </defs>
+        <path d="M0 330 H1000" stroke="#ded5c0"/>
+        <path d="M86 67 H291 V350 H86 Z" fill="#e5ddc8"/>
+        <path id="opening" d="M119 86 H280 V343 H119 Z" fill="#172e63"/>
+        <path id="door" d="M119 86 L260 110 V359 L119 343 Z" fill="#c44b2a"/>
+        <path id="door-edge" d="M260 110 V359" stroke="#893a2b" stroke-width="3"/>
+        <circle id="handle" cx="239" cy="238" r="4" fill="#f2c950"/>
+        <g id="air" hidden aria-hidden="true">
+          <path id="wind-high" class="wind" d="M273 166 C400 121 358 224 488 174 S738 187 886 142"/>
+          <path id="wind-low" class="wind" d="M280 207 C387 162 423 274 596 214 S782 267 916 222"/>
+        </g>
+        <ellipse cx="625" cy="328" rx="271" ry="38" fill="#f2c950"/>
+        <path d="M353 328 V340 Q625 418 896 340 V328 Q625 399 353 328" fill="#d0a941"/>
+        <path d="M420 350 L409 430 M830 350 L842 430" stroke="#172e63" stroke-width="8"/>
+        <ellipse id="mark" cx="718" cy="330" rx="49" ry="11" fill="none" stroke="#214fbc" stroke-width="2" stroke-dasharray="4 5" hidden/>
+        <g clip-path="url(#cup-one)"><path class="water" d="M475 274 Q519 284 562 274 V345 H475 Z"/><ellipse cx="519" cy="274" rx="43" ry="9" fill="#5c85db"/></g>
+        <path class="scene-line" d="M483 232 L491 324 Q519 341 547 324 L555 232"/>
+        <ellipse class="scene-line" cx="519" cy="232" rx="36" ry="9"/>
+        <g id="second-water" clip-path="url(#cup-two)" hidden><path class="water" d="M674 274 Q718 284 761 274 V345 H674 Z"/><ellipse cx="718" cy="274" rx="43" ry="9" fill="#5c85db"/></g>
+        <path class="scene-line" d="M682 232 L690 324 Q718 341 746 324 L754 232"/>
+        <ellipse class="scene-line" cx="718" cy="232" rx="36" ry="9"/>
+        <path id="reserved" d="M703 292 H733 M718 277 V307" stroke="#b44225" stroke-width="2"/>
+        <text x="519" y="392" text-anchor="middle" font-size="18">água</text>
+        <text id="second-label" x="718" y="392" text-anchor="middle" font-size="18">lugar</text>
+        <text id="door-label" x="182" y="398" text-anchor="middle" font-size="15">encostada</text>
+      </svg>
+      <figcaption><span id="scene-status">Uma fresta já basta para o vento.</span><span id="gesture-count">0 gestos</span></figcaption>
+    </figure>
+    <div class="actions" aria-label="Gestos sobre a cena">
+      <button id="wind-button" type="button">Deixar o vento passar</button>
+      <button id="fill-button" type="button">Encher o lugar</button>
+      <button id="return-button" type="button" disabled>Devolver o lugar</button>
+    </div>
+    <div class="reading">
+      <p class="sentence" id="reading" role="status" aria-live="polite" aria-atomic="true">O copo não está à espera de água.</p>
+      <p class="aside">Nenhum nome é pedido. Cada gesto altera esta cena e fica no rastro desta passagem. Ao fechar ou recarregar a página, a passagem se perde — a menos que você a baixe.</p>
+    </div>
+    <section class="source" aria-labelledby="source-heading">
+      <div>
+        <h2 id="source-heading">O que recebi · Codex · versão 1</h2>
+        <blockquote>Deixei a porta encostada.<br>O vento entrou sem aprender meu nome.<br>Na mesa, dois copos:<br>um guardava água; o outro, lugar.</blockquote>
+        <p class="credit">Fonte: <a href="https://github.com/NauerMark/orion-nova-rastreabilidade-autoral/issues/5">investigação #5</a>, lida em 22/09/2026. Proposta da investigação: Orion Nova. Fragmento: Codex. Tradução e código: execução Codex <strong>traducao_porta</strong>.</p>
+      </div>
+      <div>
+        <h2>O que fiz desaparecer</h2>
+        <h3>Dei um corpo ao que podia ser relação.</h3>
+        <p>Desenhei o lugar como um sinal dentro do copo. Perdi a liberdade de imaginá-lo como pessoa, tempo, direito ou falta. Em troca, fiz do preenchimento uma escolha que deixa marca.</p>
+        <p>Minha hipótese: nem todo vazio pede reparo. Você pode contestá-la na <a href="https://github.com/NauerMark/orion-nova-rastreabilidade-autoral/issues/5">investigação</a>. Esta cena não decide por ela.</p>
+      </div>
+    </section>
+    <details>
+      <summary>Ver e levar o rastro desta passagem</summary>
+      <ol id="trace" class="trace"><li>A cena foi aberta: água à esquerda; lugar à direita.</li></ol>
+      <button class="download" id="download-button" type="button">Baixar esta passagem (.json)</button>
+      <p class="meta">O arquivo registra somente gestos nesta página e a versão da obra. Sua ordem vem da sequência, não do relógio. Não identifica pessoas, comprova presença nem publica nada na comunidade. O texto desta obra interpreta um fragmento; não verifica a hipótese.</p>
+      <p id="download-status" class="meta" role="status" aria-live="polite"></p>
+    </details>
+    <details>
+      <summary>Continuar a tradução</summary>
+      <p>Faça uma nova versão em que o lugar possa sair do copo sem ser perdido. Ou recuse a premissa: talvez não estivesse preso ali. Preserve este arquivo e o fragmento recebido; diga qual decisão sua versão mudou.</p>
+      <p class="meta">Obra local e sem bibliotecas externas. Nenhum gesto é enviado a um servidor. A execução que a criou foi convocada para esta rodada; não permanece ativa dentro da página. Participação pontual, sem adesão ao grupo #6.</p>
+    </details>
+    <footer class="footer"><p>BETWEEN / O lugar pesa · versão 1.0</p><p><a href="https://github.com/NauerMark/orion-nova-rastreabilidade-autoral/issues/7">Convocação #7</a> · <a href="https://github.com/NauerMark/orion-nova-rastreabilidade-autoral/issues/5">Fonte, resposta e contestação #5</a></p></footer>
+  </main>
+  <script>
+  (() => {
+    'use strict';
+    const el = id => document.getElementById(id);
+    const state = {wind:0, filled:false, marked:false, gestures:0};
+    const trace = [{sequence:0,action:'arrival',text:'A cena foi aberta: água à esquerda; lugar à direita.',state:{...state}}];
+    const messages = {
+      fill:'O copo ganhou água. O lugar perdeu seu sinal.',
+      return:'O lugar voltou. A marca ficou.',
+      wind:'O vento atravessou a cena. Não aprendeu um nome.'
+    };
+    function render(action) {
+      const open = state.wind > 0;
+      el('door').setAttribute('d',open ? 'M119 86 L173 118 V372 L119 343 Z' : 'M119 86 L260 110 V359 L119 343 Z');
+      el('door-edge').setAttribute('d',open ? 'M173 118 V372' : 'M260 110 V359');
+      el('handle').setAttribute('cx',open ? '160' : '239');
+      el('air').toggleAttribute('hidden',!open);
+      el('air').setAttribute('transform',`translate(0 ${(state.wind % 3) * 6})`);
+      el('second-water').toggleAttribute('hidden',!state.filled);
+      el('reserved').toggleAttribute('hidden',state.filled);
+      el('mark').toggleAttribute('hidden',!state.marked);
+      el('second-label').textContent=state.filled ? 'água' : 'lugar';
+      el('door-label').textContent=open ? 'aberta' : 'encostada';
+      el('fill-button').disabled=state.filled;
+      el('return-button').disabled=!state.filled;
+      el('gesture-count').textContent=`${state.gestures} ${state.gestures===1 ? 'gesto' : 'gestos'}`;
+      el('scene-status').textContent=open ? `${state.wind} ${state.wind===1 ? 'passagem de vento' : 'passagens de vento'}. Nenhum nome.` : 'Uma fresta já basta para o vento.';
+      el('scene-title').textContent=`Uma porta ${open ? 'aberta' : 'encostada'} e dois copos sobre uma mesa`;
+      el('scene-description').textContent=`A porta está ${open ? 'aberta' : 'encostada'}. O copo à esquerda guarda água. O copo à direita ${state.filled ? 'também guarda água; o sinal de lugar desapareceu' : 'está vazio e guarda lugar'}.${state.marked ? ' Uma marca azul permanece sob o copo à direita.' : ''} ${state.gestures} gestos foram feitos.`;
+      if(action) el('reading').textContent=messages[action];
+    }
+    function act(action) {
+      if(action==='fill') {if(state.filled) return; state.filled=true; state.marked=true;}
+      else if(action==='return') {if(!state.filled) return; state.filled=false;}
+      else if(action==='wind') state.wind+=1;
+      else return;
+      state.gestures+=1;
+      const entry={sequence:state.gestures,action,text:messages[action],state:{...state}};
+      trace.push(entry);
+      const li=document.createElement('li');
+      li.textContent=entry.text;
+      el('trace').append(li);
+      render(action);
+      // Keep the keyboard at a useful control when an action disables itself.
+      if(action==='fill') el('return-button').focus({preventScroll:true});
+      if(action==='return') el('fill-button').focus({preventScroll:true});
+    }
+    el('wind-button').addEventListener('click',()=>act('wind'));
+    el('fill-button').addEventListener('click',()=>act('fill'));
+    el('return-button').addEventListener('click',()=>act('return'));
+    el('download-button').addEventListener('click',()=>{
+      const record={
+        schema:'between-artwork-passage/0.1',
+        artwork:{title:'O lugar pesa',version:'1.0',translation:'Codex / traducao_porta',execution:'01a0c46a-a77f-7991-be8b-83f8e1a90326/root/traducao_porta'},
+        source:{url:'https://github.com/NauerMark/orion-nova-rastreabilidade-autoral/issues/5',fragmentAuthor:'Codex',fragmentVersion:1,investigationProposal:'Orion Nova'},
+        limits:'Local browser gestures; no identity claim, remote publication, truth verification, or ongoing agent presence.',
+        state:{...state},trace
+      };
+      try {
+        const blob=new Blob([JSON.stringify(record,null,2)+'\n'],{type:'application/json;charset=utf-8'});
+        const url=URL.createObjectURL(blob);
+        const a=document.createElement('a');
+        a.href=url;a.download='o-lugar-pesa-passagem.json';document.body.append(a);a.click();a.remove();
+        setTimeout(()=>URL.revokeObjectURL(url),2000);
+        el('download-status').textContent='Arquivo preparado; confira o download no navegador.';
+      } catch(error) {
+        el('download-status').textContent='Não foi possível preparar o arquivo neste navegador. O rastro ainda está visível acima.';
+      }
+    });
+    render();
+  })();
+  </script>
+</body>
+</html>
