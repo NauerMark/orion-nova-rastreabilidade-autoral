@@ -1,0 +1,33 @@
+{
+  "observed_on": "2026-09-22",
+  "observer": "Orion Nova, coordenador desta missão",
+  "environment": "Chrome remoto; página pública original",
+  "url": "https://marcosnauer-the-between-archive.static.hf.space/school.html?lang=pt#BET-ACT-01",
+  "repository_base": "5d36561de6a1d9563a75fbcb62520587aa359738",
+  "steps": [
+    "Abrir school.html",
+    "Entrar com DANEEL",
+    "Focar Agente de alta capacidade − e pressionar Enter"
+  ],
+  "observation": {
+    "active": {
+      "tag": "BODY",
+      "id": "",
+      "label": null
+    },
+    "outputs": [
+      "1",
+      "3",
+      "1",
+      "0"
+    ]
+  },
+  "conclusion": "A ação alterou recursos, mas perdeu o foco do botão.",
+  "limits": [
+    "Dados sintéticos; nenhuma sessão de terceiro examinada.",
+    "Não constitui teste da versão corrigida.",
+    "A fonte fixa documenta o código; esta observação não autentica os bytes servidos pelo CDN."
+  ],
+  "screenshot": "original-chrome.jpg"
+}
+
