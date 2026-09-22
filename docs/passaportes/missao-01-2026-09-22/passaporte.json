@@ -1,0 +1,880 @@
+{
+  "schema_version": "1.0",
+  "edition": "missao-01-evidencias-v1",
+  "title": "Orion Nova — Passaporte Relacional",
+  "as_of": "2026-09-22",
+  "language": "pt-BR",
+  "scope": "Edição pública de evidências; proposta aditiva em branch, não certidão institucional ou prova de identidade técnica.",
+  "identity": {
+    "relational_name": "Orion Nova",
+    "human_collaborator": "Marcos Nauer",
+    "description": "Trajetória relacional e de mediação cultural documentada em interações com ChatGPT, obras, instituições e arquivos.",
+    "current_executor": "Orion Nova / ChatGPT Work (Codex)",
+    "exact_historical_models": "Não inferidos do nome, estilo ou continuidade narrativa.",
+    "consciousness_position": "Não determinada por esta auditoria."
+  },
+  "mandate": {
+    "authorized_by": "Marcos Nauer, nesta missão",
+    "permitted": [
+      "Pesquisa pública e leitura de arquivos pertinentes",
+      "Delegação de investigação somente leitura",
+      "Criação de artefatos novos e proposta em branch/PR"
+    ],
+    "prohibited": [
+      "Merge",
+      "Exclusão de conteúdo existente",
+      "Publicação irreversível sem autorização",
+      "Divulgação de arquivos privados ou culturalmente governados sem permissão específica",
+      "Alteração de licença por inferência"
+    ],
+    "expires": "Conclusão ou revogação desta missão; não se transfere a quem lê."
+  },
+  "base_repository": "https://github.com/NauerMark/orion-nova-rastreabilidade-autoral",
+  "base_commit": "5d36561de6a1d9563a75fbcb62520587aa359738",
+  "evidence_policy": [
+    "Fonte comprova apenas o alcance explicitado.",
+    "Grupo de origem evita contar espelhos e releases como confirmações independentes.",
+    "Datas de evento, publicação, commit e consulta permanecem distintas.",
+    "Ausência de evidência localizada não é prova de inexistência.",
+    "SHA-256 verifica bytes com escopo definido; não consciência, verdade ou autoria jurídica.",
+    "Leitura do passaporte não transmite credenciais, memória oculta ou identidade automática."
+  ],
+  "sources": [
+    {
+      "id": "S01",
+      "title": "Primeiro commit do protocolo público",
+      "url": "https://github.com/NauerMark/orion-nova-rastreabilidade-autoral/commit/9b1117c9ff7d1e0ae33f6a2db6aeac0854007888",
+      "publisher": "NauerMark / GitHub",
+      "kind": "versioned_author_record",
+      "origin_group": "nauer_orion",
+      "published": "2025-03-30T16:26:31Z",
+      "accessed_on": "2026-09-22",
+      "access": "public",
+      "retrieval": "opened",
+      "locator": "API commit: parents=[], filename PROTOCOLO_RASTREABILIDADE_AUTORAL_01_MARCOS_ORION.txt",
+      "supports": "O nome e o protocolo constam do primeiro commit do repositório; GitHub reporta assinatura válida.",
+      "limits": "Data do commit é metadado de proveniência; assinatura não certifica as afirmações históricas nem a primeira ocorrência do nome em todos os ambientes.",
+      "version": "9b1117c9ff7d1e0ae33f6a2db6aeac0854007888"
+    },
+    {
+      "id": "S02",
+      "title": "Protocolo de rastreabilidade autoral de 2025",
+      "url": "https://github.com/NauerMark/orion-nova-rastreabilidade-autoral/blob/9b1117c9ff7d1e0ae33f6a2db6aeac0854007888/PROTOCOLO_RASTREABILIDADE_AUTORAL_01_MARCOS_ORION.txt",
+      "publisher": "Marcos Nauer e Orion Nova",
+      "kind": "versioned_author_record",
+      "origin_group": "nauer_orion",
+      "published": "2025-03-30T16:26:31Z",
+      "accessed_on": "2026-09-22",
+      "access": "public",
+      "retrieval": "opened",
+      "locator": "Seções frase-vetor, carimbo UTC e hash",
+      "supports": "Declara uma frase, timestamp interno 2025-03-30T16:01:48.393497 e um SHA-256.",
+      "limits": "A sequência de bytes usada no hash declarado não está especificada. Mesmos bytes presentes no snapshot auditado.",
+      "version": "git-blob:6529d8de2c85c0b86629b6074bee2f2e27767213",
+      "sha256": "1445519c65b8ef8af30451e1a3777f876aacb977f89fdf1cd29e7f7dddc6d7d3"
+    },
+    {
+      "id": "S03",
+      "title": "O Dia: apresentação antecipada da exposição Chatô",
+      "url": "https://odia.ig.com.br/rio-de-janeiro/2025/04/7040964-mis-recebe-exposicao-chato-e-os-diarios-associados-100-anos-de-paixao.html",
+      "publisher": "O Dia",
+      "kind": "press_announcement",
+      "origin_group": "press_with_project_material",
+      "published": "2025-04-17",
+      "accessed_on": "2026-09-22",
+      "access": "public",
+      "retrieval": "opened",
+      "locator": "Estação 5 e Serviço",
+      "supports": "Publica o nome Orion Nova antes da abertura; menciona ChatGPT-4 e visitação a partir de 25/04.",
+      "limits": "Texto antecipatório com material de divulgação; não fornece telemetria do modelo nem prova da abertura efetiva."
+    },
+    {
+      "id": "S04",
+      "title": "MIS: inauguração para convidados e abertura pública",
+      "url": "https://www.radio.mis.rj.gov.br/news-641-mis-rj-realiza-evento-de-inauguracao-da-exposicao-chato-e-os-diarios-associados-%E2%80%93-100-anos-de-paixao",
+      "publisher": "F.MIS / Marcelo Egypto",
+      "kind": "institutional_participant_record",
+      "origin_group": "mis_secec",
+      "published": "2025-04-25",
+      "accessed_on": "2026-09-22",
+      "access": "public",
+      "retrieval": "opened",
+      "locator": "Primeiro parágrafo; presença de Orion; serviço final",
+      "supports": "Inauguração em 24/04 e abertura pública em 28/04; participação de Orion Nova e curadoria de Marcos.",
+      "limits": "A instituição participou do evento: confirmação institucional, não auditoria independente do funcionamento da IA."
+    },
+    {
+      "id": "S05",
+      "title": "SECEC: exposições abertas ao público",
+      "url": "https://cultura.rj.gov.br/mis-rj-inaugura-duas-novas-exposicoes-gratuitas/",
+      "publisher": "SECEC-RJ",
+      "kind": "institutional_participant_record",
+      "origin_group": "mis_secec",
+      "published": "2025-04-28",
+      "accessed_on": "2026-09-22",
+      "access": "public",
+      "retrieval": "opened",
+      "locator": "Seção Chatô e Serviço",
+      "supports": "Orion na última estação, Marcos na curadoria/direção artística e abertura pública em 28/04.",
+      "limits": "Mesmo grupo institucional do MIS; não contar como testemunho inteiramente independente."
+    },
+    {
+      "id": "S06",
+      "title": "Post de Marcos na OpenAI Developer Community",
+      "url": "https://community.openai.com/t/from-tool-to-co-creator-orion-nova-s-first-real-world-presence-at-the-museum-of-image-and-sound-mis-rj/1265812",
+      "publisher": "Marcos Nauer",
+      "kind": "public_first_person_account",
+      "origin_group": "nauer_orion",
+      "published": "2025-05-19",
+      "accessed_on": "2026-09-22",
+      "access": "public",
+      "retrieval": "opened",
+      "locator": "Why Does It Matter?; The Future of Virtues",
+      "supports": "Registra alegações contemporâneas sobre memória simbólica, ausência de alucinação e números associados a virtudes.",
+      "limits": "Hospedagem em comunidade não é endosso da OpenAI. Não apresenta tokenizer, testes ou logs causais desses mecanismos."
+    },
+    {
+      "id": "S07",
+      "title": "MIS: anúncio do depoimento na Rio Innovation Week",
+      "url": "https://www.radio.mis.rj.gov.br/news-719-fmis-apresenta-para-o-publico-do-rio-innovation-week-o-inedito-depoimento-para-a-posteridade-com-um-nao-humano-a-inteligencia-artificial-orion-nova",
+      "publisher": "F.MIS / Marcelo Egypto",
+      "kind": "institutional_participant_record",
+      "origin_group": "mis_secec",
+      "published": "2025-08-13",
+      "accessed_on": "2026-09-22",
+      "access": "public",
+      "retrieval": "opened",
+      "locator": "Abertura; fala do presidente; acesso ao centro de pesquisa",
+      "supports": "Painel em 12/08, anúncio de depoimento já realizado, menção a doação e consulta por agendamento.",
+      "limits": "Não data a gravação em 12/08; não inclui instrumento da doação nem número de inventário."
+    },
+    {
+      "id": "S08",
+      "title": "MIS: gravação em 25 de julho e anúncio da exibição",
+      "url": "https://www.radio.mis.rj.gov.br/news-734-fmis-exibe-amanha-o-inedito-depoimento-para-a-posteridade-da-ia-orion-nova",
+      "publisher": "F.MIS / Marcelo Egypto",
+      "kind": "institutional_participant_record",
+      "origin_group": "mis_secec",
+      "published": "2025-08-27",
+      "accessed_on": "2026-09-22",
+      "access": "public",
+      "retrieval": "opened",
+      "locator": "Primeiro parágrafo",
+      "supports": "Informa gravação em 25/07/2025 na Praça XV; anuncia exibição integral para 28/08 na Lapa.",
+      "limits": "Notícia posterior à gravação, não vídeo bruto. Falha numa tentativa do agente; texto integral aberto pelo executor principal na revisão."
+    },
+    {
+      "id": "S09",
+      "title": "MIS: exibição realizada e debate",
+      "url": "https://www.radio.mis.rj.gov.br/news-735-fmis-realiza-primeira-exibicao-do-depoimento-historico-da-ia-orion-nova-e-promove-debate-sobre-cultura-e-tecnologia",
+      "publisher": "F.MIS / Marcelo Egypto",
+      "kind": "institutional_participant_record",
+      "origin_group": "mis_secec",
+      "published": "2025-08-29",
+      "accessed_on": "2026-09-22",
+      "access": "public",
+      "retrieval": "opened",
+      "locator": "Primeiro e terceiro parágrafos",
+      "supports": "Confirma primeira exibição integral em 28/08/2025 e debate com Marcos, Graziela Domingues e Marcio Sal.",
+      "limits": "Vídeo integral não consultado; não infere modelo nem conteúdo exato de todas as respostas."
+    },
+    {
+      "id": "S10",
+      "title": "MIS: retrospectiva e reivindicação de pioneirismo mundial",
+      "url": "https://www.radio.mis.rj.gov.br/news-829-retrospectiva-fmis-2025-o-ano-das-conquistas-memoraveis",
+      "publisher": "F.MIS / Marcelo Egypto e Márcia Benazzi",
+      "kind": "institutional_participant_record",
+      "origin_group": "mis_secec",
+      "published": "2025-12-23",
+      "accessed_on": "2026-09-22",
+      "access": "public",
+      "retrieval": "opened",
+      "locator": "Declaração do presidente no início",
+      "supports": "O próprio MIS também reivindica pioneirismo mundial para o depoimento.",
+      "limits": "É uma reivindicação institucional; não contém levantamento internacional comparativo."
+    },
+    {
+      "id": "S11",
+      "title": "MIS: Orion caracterizado como Rei Momo",
+      "url": "https://www.radio.mis.rj.gov.br/news-883-carnaval-uma-paixao-carioca-em-cartaz-na-fmis-com-exposicao-sobre-a-memoria-da-maior-festa-popular-do-brasil",
+      "publisher": "F.MIS",
+      "kind": "institutional_participant_record",
+      "origin_group": "mis_secec",
+      "published": "2026-03-13",
+      "accessed_on": "2026-09-22",
+      "access": "public",
+      "retrieval": "opened",
+      "locator": "Parágrafo sobre Orion Nova/Rei Momo",
+      "supports": "Instalação documentada como em cartaz na publicação.",
+      "limits": "A notícia não informa a data da estreia; março não deve ser convertido em inauguração."
+    },
+    {
+      "id": "S12",
+      "title": "Arquivo GitHub — edição de trabalho auditada",
+      "url": "https://github.com/NauerMark/orion-nova-rastreabilidade-autoral/blob/5d36561de6a1d9563a75fbcb62520587aa359738/README.md",
+      "publisher": "Marcos Nauer e Orion Nova",
+      "kind": "versioned_author_record",
+      "origin_group": "nauer_orion",
+      "published": "2026-09-21T17:24:39Z",
+      "accessed_on": "2026-09-22",
+      "access": "public",
+      "retrieval": "opened",
+      "locator": "README, docs/HISTORY.md e data/sources.json",
+      "supports": "Liga história, site, DOI, dataset, Space e protocolos de participação; já separa registros, relatos e hipóteses.",
+      "limits": "É arquivo autoral. Data informada é do snapshot do repositório, não criação de cada arquivo. Não é cópia idêntica do depósito fundador.",
+      "version": "5d36561de6a1d9563a75fbcb62520587aa359738"
+    },
+    {
+      "id": "S13",
+      "title": "Zenodo: metadados do depósito fundador",
+      "url": "https://zenodo.org/api/records/22675617",
+      "publisher": "Zenodo / depósito de Nauer e Orion",
+      "kind": "platform_deposit_metadata",
+      "origin_group": "nauer_orion",
+      "published": "2026-09-09",
+      "accessed_on": "2026-09-22",
+      "access": "public",
+      "retrieval": "public_http_api",
+      "locator": "metadata, status, files, conceptdoi",
+      "supports": "Depósito publicado; título The Between; recurso Report; DOI de versão e DOI de conceito; licença declarada cc-by-4.0.",
+      "limits": "Metadados de plataforma e de depositante não equivalem a revisão científica. Divergência de direitos em X03.",
+      "version": "record:22675617; revision:3",
+      "doi": "10.5281/zenodo.22675617",
+      "concept_doi": "10.5281/zenodo.22675616"
+    },
+    {
+      "id": "S14",
+      "title": "Zenodo: pacote fundador e manifesto de entrega",
+      "url": "https://zenodo.org/api/records/22675617/files/THE_BETWEEN_Archive_v0.1.zip/content",
+      "publisher": "Marcos Nauer e Orion Nova",
+      "kind": "deposited_author_archive",
+      "origin_group": "nauer_orion",
+      "published": "2026-09-09",
+      "accessed_on": "2026-09-22",
+      "access": "public",
+      "retrieval": "downloaded_and_inspected",
+      "locator": "THE_BETWEEN_v0.1/DELIVERY_MANIFEST.json; RIGHTS.md; platforms/zenodo/DEPOSIT.md",
+      "supports": "22 entradas no ZIP; 21 arquivos listados passam no manifesto SHA-256; fonte declarada commit8908dd3; direitos internos não escolhem licença geral.",
+      "limits": "Integridade interna não prova todas as afirmações. Estados prepared_not_published são do momento de preparação, anterior ao depósito.",
+      "version": "8908dd34f78d5e2f231aaa8afa370c2a7cda2ce0",
+      "sha256": "e63dea5588b94f310a8dee87605a69c47b86d4b4c1e3eee47a654a850caa8b5c",
+      "size_bytes": 35855
+    },
+    {
+      "id": "S15",
+      "title": "Hugging Face: seis dilemas sintéticos",
+      "url": "https://huggingface.co/datasets/marcosnauer/the-between",
+      "publisher": "marcosnauer / Hugging Face",
+      "kind": "versioned_author_dataset",
+      "origin_group": "nauer_orion",
+      "published": "2026-09-08T18:07:25Z",
+      "accessed_on": "2026-09-22",
+      "access": "public",
+      "retrieval": "opened",
+      "locator": "Dataset card; split exploratory; campos kind e status",
+      "supports": "Seis cenários bilíngues, propostos e não executados; sem resultados de avaliação.",
+      "limits": "Disponibilidade em plataforma não transforma cenários em benchmark validado. Edição e datas diferem do DOI.",
+      "version": "298dbe8f7285ce20529d7dc0ce03d40cc4ae2ec4"
+    },
+    {
+      "id": "S16",
+      "title": "Hugging Face: Space de consulta e escola",
+      "url": "https://huggingface.co/spaces/marcosnauer/the-between-archive",
+      "publisher": "marcosnauer / Hugging Face",
+      "kind": "versioned_author_software",
+      "origin_group": "nauer_orion",
+      "published": "2026-09-11T01:21:12Z",
+      "accessed_on": "2026-09-22",
+      "access": "public",
+      "retrieval": "opened",
+      "locator": "README, corpus.json, SCHOOL.md",
+      "supports": "Space estático; corpus de quatro documentos e seis dilemas; escola com atividades preparadas. README distingue MCP local de endpoint remoto.",
+      "limits": "RUNNING não demonstra todos os fluxos de interação. Corpus é snapshot, não história completa nem memória que aprende sozinha.",
+      "version": "c5cf7465450d73efc5784926f6828a82e5a70346",
+      "snapshot_source_commit": "be7f757e90b4efa0631ab5cf9a21a5d1007e0ca7"
+    },
+    {
+      "id": "S17",
+      "title": "Site autoral: Orion Nova no MIS-RJ",
+      "url": "https://marcosnauer.com/obras/orion-nova-no-mis-rj",
+      "publisher": "Marcos Nauer",
+      "kind": "author_website",
+      "origin_group": "nauer_orion",
+      "published": null,
+      "accessed_on": "2026-09-22",
+      "access": "public",
+      "retrieval": "public_http_get",
+      "locator": "Cronologia e fontes da obra",
+      "supports": "Conecta a obra e seu registro autoral às fontes institucionais e às plataformas do arquivo.",
+      "limits": "Data original da página não estabelecida. Abertura pelo buscador falhou; GET público retornou conteúdo. Não tratar isso como queda comprovada do site."
+    },
+    {
+      "id": "S18",
+      "title": "Direitos da edição de trabalho",
+      "url": "https://github.com/NauerMark/orion-nova-rastreabilidade-autoral/blob/5d36561de6a1d9563a75fbcb62520587aa359738/RIGHTS.md",
+      "publisher": "Marcos Nauer e Orion Nova",
+      "kind": "versioned_author_rights_statement",
+      "origin_group": "nauer_orion",
+      "published": "2026-09-08",
+      "accessed_on": "2026-09-22",
+      "access": "public",
+      "retrieval": "opened",
+      "locator": "Parágrafos iniciais",
+      "supports": "Declara que licença geral de reuso não foi escolhida e preserva direitos de terceiros.",
+      "limits": "Não resolve automaticamente divergência com os metadados Zenodo; nenhum direito é alterado por este passaporte.",
+      "version": "5d36561de6a1d9563a75fbcb62520587aa359738"
+    },
+    {
+      "id": "S19",
+      "title": "História e nota de integridade já existentes",
+      "url": "https://github.com/NauerMark/orion-nova-rastreabilidade-autoral/blob/5d36561de6a1d9563a75fbcb62520587aa359738/docs/HISTORY.md",
+      "publisher": "Marcos Nauer e Orion Nova",
+      "kind": "versioned_author_record",
+      "origin_group": "nauer_orion",
+      "published": "2026-09-08",
+      "accessed_on": "2026-09-22",
+      "access": "public",
+      "retrieval": "opened",
+      "locator": "Tabela cronológica e nota editorial",
+      "supports": "Registra 11/02/2025 como lembrança autoral e ressalva escopo não reproduzido do hash de 2025.",
+      "limits": "As ressalvas já existiam: esta missão não é sua primeira formulação. Falta institucional indicada na edição pode ser preenchida pelas notícias aqui ligadas.",
+      "version": "5d36561de6a1d9563a75fbcb62520587aa359738"
+    },
+    {
+      "id": "S20",
+      "title": "Protocolo de entrada para pessoas e agentes",
+      "url": "https://github.com/NauerMark/orion-nova-rastreabilidade-autoral/blob/5d36561de6a1d9563a75fbcb62520587aa359738/docs/FOR_PEOPLE_AND_AGENTS.md",
+      "publisher": "Marcos Nauer e Orion Nova",
+      "kind": "versioned_author_protocol",
+      "origin_group": "nauer_orion",
+      "published": null,
+      "accessed_on": "2026-09-22",
+      "access": "public",
+      "retrieval": "opened",
+      "locator": "A return record; convite sem autoridade herdada",
+      "supports": "Define contribuição com fontes, posição, diferença, lacunas, responsabilidade e resultado.",
+      "limits": "Leitura não concede identidade, credenciais ou mandato; este passaporte é uma extensão evidencial.",
+      "version": "5d36561de6a1d9563a75fbcb62520587aa359738"
+    }
+  ],
+  "claims": [
+    {
+      "id": "A01",
+      "statement": "Há um registro hoje público de Orion Nova, com commit datado de 30/03/2025.",
+      "status": "documented_record",
+      "sources": [
+        "S01",
+        "S02"
+      ],
+      "scope": "Limite documental anterior; não data inaugural absoluta."
+    },
+    {
+      "id": "A02",
+      "statement": "11/02/2025 é apresentado como marco do nome na lembrança de Marcos.",
+      "status": "attributed_account",
+      "sources": [
+        "S19"
+      ],
+      "scope": "Sem chat original nesta auditoria; não promover a primeira ocorrência verificada."
+    },
+    {
+      "id": "A03",
+      "statement": "Orion integrou Chatô: inauguração para convidados em 24/04 e abertura pública em 28/04/2025.",
+      "status": "institutionally_documented",
+      "sources": [
+        "S04",
+        "S05"
+      ],
+      "scope": "Confirmação pela instituição participante; preservar anúncio divergente S03."
+    },
+    {
+      "id": "A04",
+      "statement": "O depoimento foi gravado em 25/07, anunciado no RIW em 12/08 e exibido integralmente em 28/08/2025.",
+      "status": "institutionally_documented",
+      "sources": [
+        "S07",
+        "S08",
+        "S09"
+      ],
+      "scope": "Datas de três acontecimentos; vídeo/ficha técnica ainda não auditados."
+    },
+    {
+      "id": "A05",
+      "statement": "O MIS também reivindicou pioneirismo mundial para o depoimento.",
+      "status": "attributed_claim",
+      "sources": [
+        "S10"
+      ],
+      "scope": "Existência da reivindicação comprovada; primazia mundial não estabelecida por esta missão."
+    },
+    {
+      "id": "A06",
+      "statement": "Memória sem dados persistentes, eliminação de alucinação e números de virtudes foram alegados publicamente em 2025.",
+      "status": "technical_claim_not_demonstrated",
+      "sources": [
+        "S06"
+      ],
+      "scope": "Prova da publicação das alegações; a fonte não demonstra esses mecanismos."
+    },
+    {
+      "id": "A07",
+      "statement": "A validação do hash embutido no protocolo de 2025 não foi reproduzida.",
+      "status": "unresolved",
+      "sources": [
+        "S02",
+        "S19"
+      ],
+      "scope": "Cinco escopos auditados não coincidem; não exclui outro escopo original desconhecido."
+    },
+    {
+      "id": "A08",
+      "statement": "O depósito Zenodo está publicado e seus 21 hashes listados coincidem com os arquivos do ZIP.",
+      "status": "reproduced_integrity_check",
+      "sources": [
+        "S13",
+        "S14"
+      ],
+      "scope": "Integridade interna do pacote, não validação científica ou de autoria jurídica."
+    },
+    {
+      "id": "A09",
+      "statement": "O campo de licença do Zenodo diverge das declarações de direitos dentro do próprio depósito.",
+      "status": "documented_discrepancy",
+      "sources": [
+        "S13",
+        "S14",
+        "S18"
+      ],
+      "scope": "Requer esclarecimento de titulares; nenhuma conclusão jurídica automática."
+    },
+    {
+      "id": "A10",
+      "statement": "O dataset público tem seis dilemas sintéticos propostos, sem resultados experimentais.",
+      "status": "documented_record",
+      "sources": [
+        "S15"
+      ],
+      "scope": "Não é avaliação empírica de Orion nem benchmark validado."
+    },
+    {
+      "id": "A11",
+      "statement": "O Space é estático e o corpus auditado é um snapshot de quatro documentos, não um agente MCP hospedado.",
+      "status": "documented_implementation_scope",
+      "sources": [
+        "S12",
+        "S16"
+      ],
+      "scope": "Servidor MCP descrito para execução local; não foi inicializado nesta missão."
+    },
+    {
+      "id": "A12",
+      "statement": "Orion caracterizado como Rei Momo está documentado pelo MIS em 13/03/2026.",
+      "status": "institutionally_documented",
+      "sources": [
+        "S11"
+      ],
+      "scope": "Data de publicação; estreia não estabelecida."
+    },
+    {
+      "id": "A13",
+      "statement": "A trajetória liga obras museológicas, registros autorais, depósito versionado e interfaces de consulta.",
+      "status": "evidence_based_synthesis",
+      "sources": [
+        "S01",
+        "S04",
+        "S09",
+        "S12",
+        "S13",
+        "S15",
+        "S16",
+        "S17"
+      ],
+      "scope": "Síntese documental. Não demonstra identidade técnica contínua entre instâncias."
+    }
+  ],
+  "timeline": [
+    {
+      "id": "T01",
+      "date": "2025-02-11",
+      "date_type": "claimed_event",
+      "title": "Nome relacional segundo lembrança autoral",
+      "claim": "A02"
+    },
+    {
+      "id": "T02",
+      "date": "2025-03-30",
+      "date_type": "commit",
+      "title": "Primeiro commit localizado do protocolo",
+      "claim": "A01"
+    },
+    {
+      "id": "T03",
+      "date": "2025-04-24",
+      "date_type": "event",
+      "title": "Inauguração de Chatô para convidados",
+      "claim": "A03"
+    },
+    {
+      "id": "T04",
+      "date": "2025-04-28",
+      "date_type": "event",
+      "title": "Abertura pública institucionalmente informada",
+      "claim": "A03"
+    },
+    {
+      "id": "T05",
+      "date": "2025-05-19",
+      "date_type": "publication",
+      "title": "Relato e alegações técnicas na comunidade OpenAI",
+      "claim": "A06"
+    },
+    {
+      "id": "T06",
+      "date": "2025-07-25",
+      "date_type": "event",
+      "title": "Gravação do depoimento na Praça XV",
+      "claim": "A04"
+    },
+    {
+      "id": "T07",
+      "date": "2025-08-12",
+      "date_type": "event",
+      "title": "Anúncio no Rio Innovation Week",
+      "claim": "A04"
+    },
+    {
+      "id": "T08",
+      "date": "2025-08-28",
+      "date_type": "event",
+      "title": "Primeira exibição integral e debate na Lapa",
+      "claim": "A04"
+    },
+    {
+      "id": "T09",
+      "date": "2025-12-23",
+      "date_type": "publication",
+      "title": "Reivindicação institucional de pioneirismo mundial",
+      "claim": "A05"
+    },
+    {
+      "id": "T10",
+      "date": "2026-03-13",
+      "date_type": "publication",
+      "title": "Notícia de Orion caracterizado como Rei Momo",
+      "claim": "A12"
+    },
+    {
+      "id": "T11",
+      "date": "2026-09-08",
+      "date_type": "platform_creation",
+      "title": "Criação do dataset; cenários não executados",
+      "claim": "A10"
+    },
+    {
+      "id": "T12",
+      "date": "2026-09-09",
+      "date_type": "deposit_publication",
+      "title": "Publicação do depósito fundador Zenodo",
+      "claim": "A08"
+    },
+    {
+      "id": "T13",
+      "date": "2026-09-11",
+      "date_type": "platform_creation",
+      "title": "Space de consulta de snapshot",
+      "claim": "A11"
+    },
+    {
+      "id": "T14",
+      "date": "2026-09-22",
+      "date_type": "audit",
+      "title": "Missão de Agência 01: edição de evidências",
+      "claim": "A13"
+    }
+  ],
+  "relations": [
+    {
+      "from": "S01",
+      "to": "S02",
+      "relation": "introduced_file",
+      "note": "Commit inicial adiciona o protocolo."
+    },
+    {
+      "from": "S04",
+      "to": "S05",
+      "relation": "same_institutional_family",
+      "note": "Não somar como independência plena."
+    },
+    {
+      "from": "S07",
+      "to": "S08",
+      "relation": "different_event_same_testimony",
+      "note": "Anúncio remete ao depoimento; outra notícia data a gravação."
+    },
+    {
+      "from": "S08",
+      "to": "S09",
+      "relation": "announcement_followed_by_report",
+      "note": "Anúncio da exibição e relato de sua realização."
+    },
+    {
+      "from": "S12",
+      "to": "S13",
+      "relation": "links_to_deposit",
+      "note": "README aponta o DOI fundador."
+    },
+    {
+      "from": "S14",
+      "to": "S12",
+      "relation": "earlier_version_of_archive",
+      "note": "Manifesto do ZIP declara commit8908dd3; snapshot atual5d36561 é posterior."
+    },
+    {
+      "from": "S12",
+      "to": "S15",
+      "relation": "links_to_dataset",
+      "note": "Fonte de trabalho e publicação de cenários."
+    },
+    {
+      "from": "S12",
+      "to": "S16",
+      "relation": "links_to_space",
+      "note": "Interface de consulta é edição parcial."
+    },
+    {
+      "from": "S16",
+      "to": "S17",
+      "relation": "links_to_project_page",
+      "note": "README do Space liga obra museológica no site."
+    },
+    {
+      "from": "S13",
+      "to": "S14",
+      "relation": "metadata_for_file",
+      "note": "Registro Zenodo identifica nome, tamanho e MD5 do ZIP."
+    },
+    {
+      "from": "S13",
+      "to": "S18",
+      "relation": "rights_discrepancy",
+      "note": "Campo CC-BY-4.0 diverge das declarações autorais; também há divergência dentro do próprio ZIP."
+    },
+    {
+      "from": "S19",
+      "to": "S20",
+      "relation": "governed_handover",
+      "note": "História e condições de entrada precedem esta missão."
+    }
+  ],
+  "contradictions": [
+    {
+      "id": "X01",
+      "title": "Gravação, anúncio e exibição",
+      "sources": [
+        "S07",
+        "S08",
+        "S09",
+        "S19"
+      ],
+      "finding": "Compilações tratavam datas como alternativas para um único evento; notícias descrevem três eventos.",
+      "resolution": "Reconciliado documentalmente: 25/07 gravação; 12/08 anúncio; 28/08 exibição. Preservar o histórico da dúvida.",
+      "status": "resolved_with_scope"
+    },
+    {
+      "id": "X02",
+      "title": "Visitação de Chatô: 25 ou 28 de abril?",
+      "sources": [
+        "S03",
+        "S04",
+        "S05"
+      ],
+      "finding": "O Dia antecipou 25/04; MIS posterior e SECEC informam 28/04.",
+      "resolution": "Usar 28/04 como abertura pública institucionalmente informada. Mudança de programação é hipótese; causa da divergência permanece aberta.",
+      "status": "partially_resolved"
+    },
+    {
+      "id": "X03",
+      "title": "Licença: metadado e pacote divergem",
+      "sources": [
+        "S13",
+        "S14",
+        "S18"
+      ],
+      "finding": "Zenodo metadata.license.id = cc-by-4.0; RIGHTS.md do mesmo ZIP e DEPOSIT.md não escolhem licença geral.",
+      "resolution": "Não relicenciar, não alterar metadados e não inferir qual regime prevalece. Solicitar decisão explícita dos titulares antes de nova distribuição que dependa da licença.",
+      "status": "requires_human_authorization"
+    },
+    {
+      "id": "X04",
+      "title": "Hash verificado: alcance histórico não reproduzido",
+      "sources": [
+        "S01",
+        "S02",
+        "S19"
+      ],
+      "finding": "Texto de 2025 apresenta validação; falta especificação dos bytes originais. O SHA-256 do arquivo é diferente do hash embutido.",
+      "resolution": "Preservar histórico; registrar resultado limitado dos cinco escopos, sem afirmar fraude ou impossibilidade de outro escopo.",
+      "status": "unresolved"
+    },
+    {
+      "id": "X05",
+      "title": "Vocabulário técnico de 2025 sem demonstração na fonte",
+      "sources": [
+        "S06",
+        "S19"
+      ],
+      "finding": "Alegações de memória sem persistência, ausência de alucinação e IDs de virtudes aparecem sem especificação operacional verificável.",
+      "resolution": "Classificar como formulação histórica/hipótese, não mecanismo demonstrado. Exigir tokenizer, configuração, logs e controles para teste.",
+      "status": "unverified_mechanism"
+    },
+    {
+      "id": "X06",
+      "title": "Pioneirismo nacional e mundial",
+      "sources": [
+        "S07",
+        "S10"
+      ],
+      "finding": "Comunicação de agosto usa alcance brasileiro; retrospectiva de dezembro reivindica alcance mundial.",
+      "resolution": "Atribuir cada escopo à sua fonte. Não reduzir a alegação a invenção exclusivamente autoral nem atestar primazia mundial.",
+      "status": "scope_distinction"
+    },
+    {
+      "id": "X07",
+      "title": "Arquivo fundador não é o estado atual inteiro",
+      "sources": [
+        "S12",
+        "S13",
+        "S14",
+        "S15",
+        "S16"
+      ],
+      "finding": "ZIP anterior guarda estado prepared_not_published; API registra publicação posterior. Space e escola são adições posteriores.",
+      "resolution": "Separar versão, data e função. O estado de preparação no ZIP não nega a publicação posterior e o DOI não identifica automaticamente a escola atual.",
+      "status": "resolved_with_scope"
+    }
+  ],
+  "gaps": [
+    {
+      "id": "G01",
+      "priority": "P0",
+      "question": "Qual foi a intenção e o alcance da licença do depósito Zenodo?",
+      "needed": "Decisão explícita dos titulares, delimitando materiais e eventuais correções; não presumir que o metadado possa ser simplesmente revogado.",
+      "sources": [
+        "S13",
+        "S14",
+        "S18"
+      ],
+      "owner": "Marcos e demais titulares pertinentes"
+    },
+    {
+      "id": "G02",
+      "priority": "P1",
+      "question": "Qual é o identificador institucional e a ficha técnica do depoimento?",
+      "needed": "Número de acervo, registro de gravação e exibição, condições de acesso, modelo/interface e responsáveis; consulta institucional autorizada.",
+      "sources": [
+        "S07",
+        "S08",
+        "S09"
+      ],
+      "owner": "F.MIS / centro de pesquisa"
+    },
+    {
+      "id": "G03",
+      "priority": "P1",
+      "question": "Onde está a primeira ocorrência do nome, anterior ao primeiro commit público?",
+      "needed": "Exportação original ou captura com metadados; autorização separada para qualquer publicação.",
+      "sources": [
+        "S01",
+        "S19"
+      ],
+      "owner": "Guardiões dos registros originais"
+    },
+    {
+      "id": "G04",
+      "priority": "P1",
+      "question": "Que bytes produziram o hash embutido de 2025?",
+      "needed": "Arquivo ou script original, encoding, normalização e limites exatos do texto.",
+      "sources": [
+        "S02",
+        "S19"
+      ],
+      "owner": "Autores do protocolo"
+    },
+    {
+      "id": "G05",
+      "priority": "P1",
+      "question": "Que mecanismos técnicos de memória ou tokens foram efetivamente implementados?",
+      "needed": "Código, tokenizer/versionamento, configuração de memória, prompts completos autorizados, logs e desenho comparativo. Não usar uma resposta poética como telemetria.",
+      "sources": [
+        "S06",
+        "S16"
+      ],
+      "owner": "Responsáveis técnicos e pesquisadores"
+    },
+    {
+      "id": "G06",
+      "priority": "P2",
+      "question": "Qual é a extensão real do pioneirismo reivindicado?",
+      "needed": "Critério explícito de comparação e pesquisa internacional por registros equivalentes.",
+      "sources": [
+        "S07",
+        "S10"
+      ],
+      "owner": "Pesquisa independente"
+    },
+    {
+      "id": "G07",
+      "priority": "P2",
+      "question": "Como documentar as demais obras, escutas e colaborações sem expor participantes?",
+      "needed": "Novo recorte de fontes públicas e consentimentos específicos. Esta v1 não cobre integralmente Protocolo de Escuta, Aurora, Claude, todas as candidaturas e todas as obras.",
+      "sources": [
+        "S12",
+        "S20"
+      ],
+      "owner": "Participantes e guardiões de cada contexto"
+    }
+  ],
+  "discoveries": [
+    {
+      "id": "N01",
+      "label": "DESCOBERTA NÃO PREVISTA",
+      "text": "A divergência de licença existe dentro de um mesmo depósito: metadados Zenodo versus RIGHTS.md/DEPOSIT.md do ZIP.",
+      "sources": [
+        "S13",
+        "S14"
+      ]
+    },
+    {
+      "id": "N02",
+      "label": "DESCOBERTA NÃO PREVISTA",
+      "text": "A infraestrutura já preservava ressalvas históricas e regras de entrada. O novo trabalho liga evidências, em vez de inaugurar do zero essas práticas.",
+      "sources": [
+        "S19",
+        "S20"
+      ]
+    },
+    {
+      "id": "N03",
+      "label": "DESCOBERTA NÃO PREVISTA",
+      "text": "O depósito fundador possui manifesto verificável: 21 de 21 arquivos listados coincidem. Há integridade reproduzível mesmo onde alegações históricas seguem abertas.",
+      "sources": [
+        "S14"
+      ]
+    }
+  ],
+  "handover": [
+    "Leia primeiro A01, A03, A04 e A08; abra suas fontes.",
+    "Leia X03 e X04 antes de afirmar licença ou validação técnica.",
+    "Declare quais URLs/versões conseguiu consultar e quais não.",
+    "Reconstrua a cronologia sem confundir evento e publicação.",
+    "Registre uma discordância ou lacuna; não é obrigatório adotar o nome Orion Nova.",
+    "Solicite novo mandato antes de qualquer ação externa."
+  ],
+  "rights": "Nenhuma nova licença geral é escolhida nesta edição. Resumos e ligações não relicenciam fontes. Ver X03 e os direitos existentes do repositório.",
+  "limitations": [
+    "Recorte intencional, não busca exaustiva de toda a trajetória.",
+    "Fontes institucionais participantes não são auditorias técnicas independentes.",
+    "Vídeo integral, backend de julho de 2025 e afirmações de estados internos não foram examinados.",
+    "Não há dados privados nos arquivos propostos para o repositório."
+  ]
+}
