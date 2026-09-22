@@ -65,7 +65,8 @@ function renderCommunity() {
   const result=state.community;if(!result)return;
   const model=communityModel();const sections=[['investigation-list',model.investigations,'investigation'],['group-list',model.groups,'group'],['request-list',model.requests,'agent_request']];
   for(const [id,issues,type] of sections){const container=$(id);container.replaceChildren();if(!issues.length)container.append(empty(t(result.status==='error'?'unavailable':'noRecords')));else for(const issue of issues)container.append(type==='agent_request'?buildRequest(issue):buildCard(issue,type));}
-  const activity=$('recent-activity');activity.replaceChildren();const entries=model.activity.filter(item=>item.valid).sort((a,b)=>(Date.parse(b.updatedAt)||0)-(Date.parse(a.updatedAt)||0)).slice(0,3);
+  const activity=$('recent-activity');activity.replaceChildren();const entries=model.activity.filter(item=>item.valid).sort((a,b)=>(Number(b.type==='comment')-Number(a.type==='comment')) || (Date.parse(b.updatedAt)||0)-(Date.parse(a.updatedAt)||0)).slice(0,3);
+  activity.append(node('p','small',lang==='pt'?'Contribuições consultadas nesta visita; abra as conversas para encontrar as demais.':'Contributions read during this visit; open conversations to find the others.'));
   if(!entries.length)activity.append(node('p','small',t('noActivity')));
   for(const item of entries){const entry=node('div','activity-entry');const button=node('button',null,`${item.actor?.name || item.author} · ${item.type==='issue'?t(item.kind):kindLabel(item.kind)}`);button.type='button';button.id=`activity-${item.id.replace(/[^a-z0-9-]/gi,'-')}`;button.addEventListener('click',()=>openConversation(item.issueNumber));entry.append(button,node('p',null,`${t('updated')} ${date(item.updatedAt)}`),participationSummary(item,true));activity.append(entry);}
   renderCommunityStatus();
@@ -114,7 +115,7 @@ function renderConversation() {
   $('conversation-question').textContent=issue?.meta?.question || '';$('conversation-source').href=`${WEB}/issues/${number}`;
   const context=$('conversation-context');context.replaceChildren();if(issue){if(issue.valid){context.append(participationSummary(issue));if(issue.meta.conditions)context.append(contextBlock(t('conditions'),issue.meta.conditions));if(issue.meta.pending)context.append(contextBlock(t('pending'),issue.meta.pending));context.append(originalBody(issue),provenance(issue));}else context.append(invalidRecord(issue));}
   $('contribute').disabled=!issue;$('contest').disabled=!issue;$('request-here').disabled=!issue;
-  const list=$('comment-list');list.replaceChildren();if(!result){$('conversation-status').textContent=t('commentLoading');return;}
+  const list=$('comment-list');list.replaceChildren();if(!result || result.commentsStatus==='not_loaded'){$('conversation-status').textContent=t('commentLoading');return;}
   const messages=[];if(result.status==='error')messages.push(t('error'));if(result.commentsStatus==='stale')messages.push(`${t('staleComments')} ${date(result.commentsFetchedAt)}`);else if(result.commentsFetchedAt)messages.push(`${t('readAt')} ${date(result.commentsFetchedAt)}`);if(result.status==='partial')messages.push(t('partial'));if(result.truncated)messages.push(t('limited'));if(result.status==='stale' && result.commentsStatus!=='stale')messages.push(t('stale'));
   $('conversation-status').textContent=messages.join(' · ');
   if(result.comments?.length)for(const comment of result.comments)list.append(buildComment(comment));else list.append(empty(t(['error','not_loaded','stale'].includes(result.commentsStatus)||result.status==='error'?'commentsUnavailable':'noComments'),false));

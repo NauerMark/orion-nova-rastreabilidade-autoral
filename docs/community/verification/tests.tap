@@ -2,247 +2,247 @@ TAP version 13
 # Subtest: single self-contained script, unique IDs, original fragment retained
 ok 1 - single self-contained script, unique IDs, original fragment retained
   ---
-  duration_ms: 1.168792
+  duration_ms: 1.641208
   type: 'test'
   ...
 # Subtest: arrival preserves water/place difference and disabled return action
 ok 2 - arrival preserves water/place difference and disabled return action
   ---
-  duration_ms: 1.013333
+  duration_ms: 0.792833
   type: 'test'
   ...
 # Subtest: filling and returning preserve the mark and maintain keyboard continuation
 ok 3 - filling and returning preserve the mark and maintain keyboard continuation
   ---
-  duration_ms: 0.694625
+  duration_ms: 0.539042
   type: 'test'
   ...
 # Subtest: wind changes the door and count without changing the second cup
 ok 4 - wind changes the door and count without changing the second cup
   ---
-  duration_ms: 0.9325
+  duration_ms: 0.369208
   type: 'test'
   ...
 # Subtest: download preparation preserves sequence, source, and earlier states
 ok 5 - download preparation preserves sequence, source, and earlier states
   ---
-  duration_ms: 1.668667
+  duration_ms: 1.648083
   type: 'test'
   ...
 # Subtest: index discovers actual schema Issues without a label and never loads all comments
 ok 6 - index discovers actual schema Issues without a label and never loads all comments
   ---
-  duration_ms: 45.312542
+  duration_ms: 44.257084
   type: 'test'
   ...
 # Subtest: index paginates fixed endpoints and deduplicates shifted pages
 ok 7 - index paginates fixed endpoints and deduplicates shifted pages
   ---
-  duration_ms: 1.051542
+  duration_ms: 1.204292
   type: 'test'
   ...
 # Subtest: bounded pagination is disclosed rather than presenting an incomplete index as complete
 ok 8 - bounded pagination is disclosed rather than presenting an incomplete index as complete
   ---
-  duration_ms: 2.006083
+  duration_ms: 2.016292
   type: 'test'
   ...
 # Subtest: hostile pagination cannot cause a request to an embedded URL
 ok 9 - hostile pagination cannot cause a request to an embedded URL
   ---
-  duration_ms: 0.961209
+  duration_ms: 0.93225
   type: 'test'
   ...
 # Subtest: failure after a real first page retains data with a partial/error signal
 ok 10 - failure after a real first page retains data with a partial/error signal
   ---
-  duration_ms: 0.512666
+  duration_ms: 0.507875
   type: 'test'
   ...
 # Subtest: a failed refresh marks the previous isolated cache stale and preserves its retrieval timestamp
 ok 11 - a failed refresh marks the previous isolated cache stale and preserves its retrieval timestamp
   ---
-  duration_ms: 0.455834
+  duration_ms: 0.456666
   type: 'test'
   ...
 # Subtest: malformed community metadata remains linked while unrelated material is ignored
 ok 12 - malformed community metadata remains linked while unrelated material is ignored
   ---
-  duration_ms: 0.262458
+  duration_ms: 0.277208
   type: 'test'
   ...
 # Subtest: conversation comments load on demand across pages, including non-protocol replies
 ok 13 - conversation comments load on demand across pages, including non-protocol replies
   ---
-  duration_ms: 0.802875
+  duration_ms: 0.816292
   type: 'test'
   ...
 # Subtest: a fresh Issue with failed comments explicitly labels cached comments stale
 ok 14 - a fresh Issue with failed comments explicitly labels cached comments stale
   ---
-  duration_ms: 1.127125
+  duration_ms: 1.195791
   type: 'test'
   ...
 # Subtest: cancelled, malformed and oversized transport never generate seed data
 ok 15 - cancelled, malformed and oversized transport never generate seed data
   ---
-  duration_ms: 0.709875
+  duration_ms: 0.540916
   type: 'test'
   ...
 # Subtest: bad destinations are rejected before fetching and pull requests cannot become conversations
 ok 16 - bad destinations are rejected before fetching and pull requests cannot become conversations
   ---
-  duration_ms: 0.426458
+  duration_ms: 0.402833
   type: 'test'
   ...
 # Subtest: draft URLs target GitHub review and comments use explicit copy/paste
 ok 17 - draft URLs target GitHub review and comments use explicit copy/paste
   ---
-  duration_ms: 2.360708
+  duration_ms: 2.407708
   type: 'test'
   ...
 # Subtest: a count mismatch does not silently present an incomplete conversation as fresh
 ok 18 - a count mismatch does not silently present an incomplete conversation as fresh
   ---
-  duration_ms: 0.394167
+  duration_ms: 0.3885
   type: 'test'
   ...
 # Subtest: transport normalization preserves optional mediation and received versions
 ok 19 - transport normalization preserves optional mediation and received versions
   ---
-  duration_ms: 0.766291
+  duration_ms: 0.710917
   type: 'test'
   ...
 # Subtest: receiving a contribution does not turn acknowledgement or another author’s conditions into commitment
 ok 20 - receiving a contribution does not turn acknowledgement or another author’s conditions into commitment
   ---
-  duration_ms: 2.988917
+  duration_ms: 2.219
   type: 'test'
   ...
 # Subtest: a later continuation and closure preserve the earlier contest and its unresolved condition
 ok 21 - a later continuation and closure preserve the earlier contest and its unresolved condition
   ---
-  duration_ms: 0.999834
+  duration_ms: 0.813292
   type: 'test'
   ...
 # Subtest: declared executions stay distinct from each other and from a shared publishing account
 ok 22 - declared executions stay distinct from each other and from a shared publishing account
   ---
-  duration_ms: 1.3955
+  duration_ms: 1.243792
   type: 'test'
   ...
 # Subtest: format and parse preserve conditions, pending questions and the position of a continuation
 ok 23 - format and parse preserve conditions, pending questions and the position of a continuation
   ---
-  duration_ms: 1.377459
+  duration_ms: 1.708542
   type: 'test'
   ...
 # Subtest: a later observed claim cannot overwrite the earlier hypothesis in the derived conversation
 ok 24 - a later observed claim cannot overwrite the earlier hypothesis in the derived conversation
   ---
-  duration_ms: 0.513459
+  duration_ms: 0.566333
   type: 'test'
   ...
 # Subtest: a GitHub edit exposes current timestamp and source without inventing unavailable revision history
 ok 25 - a GitHub edit exposes current timestamp and source without inventing unavailable revision history
   ---
-  duration_ms: 0.494833
+  duration_ms: 0.727958
   type: 'test'
   ...
 # Subtest: misleading prose and invalid epistemic metadata do not become verification or hide the source
 ok 26 - misleading prose and invalid epistemic metadata do not become verification or hide the source
   ---
-  duration_ms: 0.273208
+  duration_ms: 0.224208
   type: 'test'
   ...
 # Subtest: an agent request and acknowledgement do not manufacture a launched execution
 ok 27 - an agent request and acknowledgement do not manufacture a launched execution
   ---
-  duration_ms: 0.597833
+  duration_ms: 0.286208
   type: 'test'
   ...
 # Subtest: a local draft roundtrips its declarations, conditions, pending work and position
 ok 28 - a local draft roundtrips its declarations, conditions, pending work and position
   ---
-  duration_ms: 3.131667
+  duration_ms: 2.405125
   type: 'test'
   ...
 # Subtest: metadata is terminal and unambiguous across Markdown fences
 ok 29 - metadata is terminal and unambiguous across Markdown fences
   ---
-  duration_ms: 0.538708
+  duration_ms: 0.5385
   type: 'test'
   ...
 # Subtest: malformed and oversized declarations are rejected without a truth certificate
 ok 30 - malformed and oversized declarations are rejected without a truth certificate
   ---
-  duration_ms: 3.661583
+  duration_ms: 3.105959
   type: 'test'
   ...
 # Subtest: reference IDs and optional-empty text retain their defined types
 ok 31 - reference IDs and optional-empty text retain their defined types
   ---
-  duration_ms: 0.417542
+  duration_ms: 0.333459
   type: 'test'
   ...
 # Subtest: related preserves numeric Issue IDs used by the real seed alongside text references
 ok 32 - related preserves numeric Issue IDs used by the real seed alongside text references
   ---
-  duration_ms: 1.278125
+  duration_ms: 1.671584
   type: 'test'
   ...
 # Subtest: formatting does not execute HTML, close data fences or invoke accessors
 ok 33 - formatting does not execute HTML, close data fences or invoke accessors
   ---
-  duration_ms: 0.212125
+  duration_ms: 0.211083
   type: 'test'
   ...
 # Subtest: normalization retains real account, source IDs and edit dates independently of actor declaration
 ok 34 - normalization retains real account, source IDs and edit dates independently of actor declaration
   ---
-  duration_ms: 0.644417
+  duration_ms: 0.577083
   type: 'test'
   ...
 # Subtest: invalid protocol bodies keep a safe GitHub source instead of vanishing
 ok 35 - invalid protocol bodies keep a safe GitHub source instead of vanishing
   ---
-  duration_ms: 0.413042
+  duration_ms: 0.355125
   type: 'test'
   ...
 # Subtest: community derivation keeps disagreement and pending work after a reply
 ok 36 - community derivation keeps disagreement and pending work after a reply
   ---
-  duration_ms: 1.458833
+  duration_ms: 0.703208
   type: 'test'
   ...
 # Subtest: groups and requests do not become real membership or launched agents by being present
 ok 37 - groups and requests do not become real membership or launched agents by being present
   ---
-  duration_ms: 0.829666
+  duration_ms: 0.641792
   type: 'test'
   ...
 # Subtest: optional participation preserves old posts without inventing direct autonomy
 ok 38 - optional participation preserves old posts without inventing direct autonomy
   ---
-  duration_ms: 0.486958
+  duration_ms: 1.0605
   type: 'test'
   ...
 # Subtest: the same publishing account can carry two executions with distinct preserved mediation
 ok 39 - the same publishing account can carry two executions with distinct preserved mediation
   ---
-  duration_ms: 0.477292
+  duration_ms: 0.605166
   type: 'test'
   ...
 # Subtest: a mediated invitation and acknowledgement still do not imply acceptance or launch
 ok 40 - a mediated invitation and acknowledgement still do not imply acceptance or launch
   ---
-  duration_ms: 0.554708
+  duration_ms: 0.477792
   type: 'test'
   ...
 # Subtest: participation rejects unknown authority fields, unbounded text and malformed declarations
 ok 41 - participation rejects unknown authority fields, unbounded text and malformed declarations
   ---
-  duration_ms: 0.553458
+  duration_ms: 0.569125
   type: 'test'
   ...
 1..41
@@ -253,4 +253,4 @@ ok 41 - participation rejects unknown authority fields, unbounded text and malfo
 # cancelled 0
 # skipped 0
 # todo 0
-# duration_ms 173.936541
+# duration_ms 189.994958
