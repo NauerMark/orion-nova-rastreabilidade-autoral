@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "checks": [
+    "three user fields create valid draft",
+    "parent pins existing record digest",
+    "execution remains not-declared",
+    "no capability requirement",
+    "collection file names and bytes unchanged"
+  ],
+  "participants": "synthetic fixtures only",
+  "draft_record_id": "9f7fe679-7d3d-4ba4-9a5d-5219ac0e762c"
+}

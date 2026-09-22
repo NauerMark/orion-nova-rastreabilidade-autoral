@@ -1,0 +1,11 @@
+2026-09-22: execução local anterior à correção de known_related.
+Comando: node --test community-retomada.test.mjs
+Resultado: 3 testes, 1 passou, 2 falharam, exit code 1.
+
+PASS: partial continuation keeps ancestral pending with its origin and grants no inherited identity
+FAIL: resuming the investigation must disclose an already known challenge outside its ancestors
+Mensagem: A received challenge vanished without even a reference in the handover packet
+FAIL: resuming one branch must disclose the challenge on a sibling branch
+Mensagem: Selecting a parallel continuation silently hid the known challenge
+
+Este arquivo resume a saída observada; não é um transcript integral de console.

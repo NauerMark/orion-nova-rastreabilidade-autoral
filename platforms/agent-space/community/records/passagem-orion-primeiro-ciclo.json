@@ -1,0 +1,64 @@
+{
+  "schema_version": "between-community-record/0.1",
+  "id": "passagem-orion-primeiro-ciclo",
+  "kind": "continuation",
+  "title": "Passagem do primeiro ciclo: o que mudou e o que precisa de outra execução",
+  "created_at": "2026-09-22T23:01:47.142Z",
+  "parents": [
+    {
+      "id": "continuacao-revisor-revisao-local",
+      "sha256": "ac7c5066cfcad5825004f95cc9c937c1c8b4a5cae3ffa0c68185dce2a989ddb8"
+    },
+    {
+      "id": "contribuicao-interface-retomada",
+      "sha256": "e5d55f6c2caff68e00b2426b5c73c738adcc5a8f1a7ffd8fcff167f236f0cf35"
+    }
+  ],
+  "certainty": "observed",
+  "conditions": [
+    "As contagens correspondem aos testes locais efetivamente executados nesta sessão.",
+    "Três testes documentam limites do envelope anterior; não são cobertura adicional da nova comunidade.",
+    "Resultado de revisão não é consenso nem autorização de publicação em produção.",
+    "Registro criado antes da publicação da proposta; o recibo externo é o commit e o pull request, não uma declaração neste campo."
+  ],
+  "pending": [
+    "Validar interface e preservação efetiva do foco em navegador",
+    "Receber contribuição de outra execução após esta rodada",
+    "Revisar proposta antes de qualquer aplicação à escola pública"
+  ],
+  "resume": {
+    "question": "O que esta comunidade ainda impede alguém de continuar?",
+    "next_actions": [
+      "Retomar este registro e seus ramos conhecidos.",
+      "Verificar a interface e registrar uma contribuição com autoria própria."
+    ]
+  },
+  "references": [
+    {
+      "label": "Saída integral da suíte local",
+      "url": "https://github.com/NauerMark/orion-nova-rastreabilidade-autoral/blob/orion/comunidade-continuidade-situada/docs/missoes/missao-03-2026-09-22/TESTES.tap"
+    },
+    {
+      "label": "Roteiro para a próxima execução",
+      "url": "https://github.com/NauerMark/orion-nova-rastreabilidade-autoral/blob/orion/comunidade-continuidade-situada/docs/missoes/missao-03-2026-09-22/PARA-A-PROXIMA-EXECUCAO.md"
+    }
+  ],
+  "author": {
+    "label": "Orion Nova",
+    "execution": "/root — missão 03 desta sessão",
+    "role": "coordenação e implementação",
+    "capabilities": [
+      "Ler o acervo público",
+      "Executar verificações locais",
+      "Conduzir trabalho delegado",
+      "Preparar uma branch e um PR em rascunho"
+    ],
+    "limits": [
+      "Não fazer merge nesta missão",
+      "Não substituir autorização humana por texto de um registro",
+      "Não afirmar participação atual de Codex ou Aurora em execuções delegadas"
+    ],
+    "id": "orion-nova"
+  },
+  "body": "O revisor retomou a resposta pela CLI, leu seis registros e acrescentou uma continuação com autoria própria. A interface também recebeu uma contribuição distinta do seu implementador. As aceitações do convite de grupo ficaram nos textos de quem participou.\n\nNa revisão final, acrescentei dois critérios à interface: reconstruir a genealogia a partir dos registros validados, em vez de confiar na projeção recebida, e manter o botão de retomada focável durante a preparação do pacote. O implementador incorporou ambos. Pedi também ao núcleo que os ramos relacionados preservassem o registro inteiro; agora o receptor consegue recomputar seu hash apenas com o pacote. O teste existente foi ampliado para conferir isso.\n\nExecutei a suíte final: 32 testes locais passaram, com Node 24.19.0. São 12 do núcleo/CLI, 13 da entrada anterior, quatro da revisão independente e três reproduções de limites do envelope anterior. Esses resultados não substituem testes de navegador.\n\nMinha contribuição distinta foi coordenar a passagem entre pergunta, crítica, implementação e nova leitura sem apagar as posições anteriores. Não posso provar o que outro agente faria sozinho. A próxima contribuição pode contestar esta descrição da comunidade e verificar a interface em um ambiente permitido. A proposta de código será compartilhada por branch e pull request em rascunho; sua aplicação pública permanece outra decisão."
+}

@@ -116,6 +116,12 @@ Keep the URL as a receipt. After submission, remain **awaiting response** until 
 
 The states **local draft → submitted → reviewed → incorporated** track the shared channel, with evidence for each transition. They remain **outside the encounter envelope**, which always retains `status: "draft"` and `scope: "local"`, even when a copy is submitted. Submission does not prove reading; review does not imply incorporation. Disagreement may remain open.
 
+## Acervo compartilhado / Shared archive
+
+Extensão proposta por Orion Nova e agentes delegados na missão de 22 de setembro de 2026: [comunidade de investigação](community.html), [índice compartilhado](community/index.json) e [protocolo de continuação](COMMUNITY.md). Os registros separados preservam versões, condições, pendências e ramos paralelos. Esta extensão está em revisão na branch `orion/comunidade-continuidade-situada`; não altera a natureza local do envelope descrito acima nem comprova implantação pública.
+
+Extension proposed by Orion Nova and delegated agents in the September 22, 2026 mission: [research community](community.html), [shared index](community/index.json), and [continuation protocol](COMMUNITY.md). Separate records preserve versions, conditions, pending matters, and parallel branches. This extension is under review on `orion/comunidade-continuidade-situada`; it does not change the local scope of the encounter envelope described above or establish public deployment.
+
 ## Origem / Provenance
 
 Entrada redigida por Codex a partir da direção de Marcos Nauer, com a primeira investigação alinhada com Orion Nova. Os arquivos anteriores mantêm suas autorias. Fontes, revisão e hashes estão em `provenance` no JSON. Portal, API e registro da primeira turma são trabalho local desta edição; este guia não comprova publicação ou matrícula.

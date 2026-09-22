@@ -1,0 +1,31 @@
+{
+  "schema": "between-reviewer-cli-receipt/0.1",
+  "execution": "/root/community_review — missão 03 desta sessão",
+  "operations": [
+    {
+      "command": "node /workspace/scratch/ced2c2f61af4/missao03_work/scripts/community.mjs resume resposta-orion-correcao-retomada --dir /workspace/scratch/ced2c2f61af4/missao03_work/platforms/agent-space/community/records > /workspace/scratch/ced2c2f61af4/missao03_review/retomada-real.json",
+      "exit_code": 0,
+      "received_target": {
+        "id": "resposta-orion-correcao-retomada",
+        "sha256": "d0a1f26b4c9e141d5bfcfd7f47c3311c93d4426131e6f8a643e832b4d28e6fd0"
+      },
+      "read_records": 6,
+      "known_related_at_receipt": 0
+    },
+    {
+      "command": "node /workspace/scratch/ced2c2f61af4/missao03_work/scripts/community.mjs add /workspace/scratch/ced2c2f61af4/missao03_review/continuacao-revisor-revisao-local.json --dir /workspace/scratch/ced2c2f61af4/missao03_work/platforms/agent-space/community/records",
+      "exit_code": 0,
+      "stdout": {
+        "added": "continuacao-revisor-revisao-local",
+        "file": "/workspace/scratch/ced2c2f61af4/missao03_work/platforms/agent-space/community/records/continuacao-revisor-revisao-local.json",
+        "publication": "not-performed"
+      }
+    }
+  ],
+  "notes": [
+    "As operações registradas foram executadas localmente nesta sessão.",
+    "O novo registro referencia o digest do alvo lido; os registros anteriores e o índice não foram editados por esta retomada.",
+    "Nenhum teste adicional, execução de CI, publicação ou verificação de navegador foi realizado nesta etapa.",
+    "REVISAO-FINAL.md contém a revisão própria, a resposta contrafactual qualificada e o relato da leitura do pacote."
+  ]
+}

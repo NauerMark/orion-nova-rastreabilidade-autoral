@@ -1,0 +1,204 @@
+TAP version 13
+# Subtest: partial continuation keeps ancestral pending with its origin and grants no inherited identity
+ok 1 - partial continuation keeps ancestral pending with its origin and grants no inherited identity
+  ---
+  duration_ms: 20.752686
+  type: 'test'
+  ...
+# Subtest: resuming the investigation must disclose an already known challenge outside its ancestors
+ok 2 - resuming the investigation must disclose an already known challenge outside its ancestors
+  ---
+  duration_ms: 9.638072
+  type: 'test'
+  ...
+# Subtest: resuming one branch must disclose the challenge on a sibling branch
+ok 3 - resuming one branch must disclose the challenge on a sibling branch
+  ---
+  duration_ms: 5.264084
+  type: 'test'
+  ...
+# Subtest: related context excludes an investigation with no graph connection
+ok 4 - related context excludes an investigation with no graph connection
+  ---
+  duration_ms: 5.430497
+  type: 'test'
+  ...
+# Observed: changed content, actor and evidence retained the contested ID and passed structural validation.
+# Observed: each branch is valid; a combined linear record preserving both parents is rejected.
+# Subtest: baseline positive control: append preserves the previous contribution and input
+ok 5 - baseline positive control: append preserves the previous contribution and input
+  ---
+  duration_ms: 6.97828
+  type: 'test'
+  ...
+# Subtest: observed boundary: structural validation accepts a changed target with unchanged IDs
+ok 6 - observed boundary: structural validation accepts a changed target with unchanged IDs
+  ---
+  duration_ms: 2.979513
+  type: 'test'
+  ...
+# Subtest: observed boundary: two valid independent replies cannot be flattened without changing a parent
+ok 7 - observed boundary: two valid independent replies cannot be flattened without changing a parent
+  ---
+  duration_ms: 3.033195
+  type: 'test'
+  ...
+# Subtest: records round-trip without mutating declared identity, clocks or source text
+ok 8 - records round-trip without mutating declared identity, clocks or source text
+  ---
+  duration_ms: 9.697224
+  type: 'test'
+  ...
+# Subtest: a newcomer only needs a question and a declared author label
+ok 9 - a newcomer only needs a question and a declared author label
+  ---
+  duration_ms: 1.139012
+  type: 'test'
+  ...
+# Subtest: canonical hashes ignore object-key and whitespace ordering but pin content and array order
+ok 10 - canonical hashes ignore object-key and whitespace ordering but pin content and array order
+  ---
+  duration_ms: 26.590627
+  type: 'test'
+  ...
+# Subtest: forks and joins retain all originals in deterministic topological order
+ok 11 - forks and joins retain all originals in deterministic topological order
+  ---
+  duration_ms: 13.220701
+  type: 'test'
+  ...
+# Subtest: duplicate ids, missing parents, cycles and changed parent content are rejected
+ok 12 - duplicate ids, missing parents, cycles and changed parent content are rejected
+  ---
+  duration_ms: 6.418565
+  type: 'test'
+  ...
+# Subtest: a continuation cannot erase ancestral conditions, pending items or author limits
+ok 13 - a continuation cannot erase ancestral conditions, pending items or author limits
+  ---
+  duration_ms: 4.538797
+  type: 'test'
+  ...
+# Subtest: a challenge can be registered without approval or a parent author endorsement
+ok 14 - a challenge can be registered without approval or a parent author endorsement
+  ---
+  duration_ms: 2.381086
+  type: 'test'
+  ...
+# Subtest: a known objection remains visible when resuming its root or a sibling branch
+ok 15 - a known objection remains visible when resuming its root or a sibling branch
+  ---
+  duration_ms: 9.45538
+  type: 'test'
+  ...
+# Subtest: malformed content, unsafe links, accessors and publication receipts are rejected
+ok 16 - malformed content, unsafe links, accessors and publication receipts are rejected
+  ---
+  duration_ms: 20.225557
+  type: 'test'
+  ...
+# Subtest: CLI adds original bytes exclusively, validates, builds and returns a handover
+ok 17 - CLI adds original bytes exclusively, validates, builds and returns a handover
+  ---
+  duration_ms: 1206.68759
+  type: 'test'
+  ...
+# Subtest: CLI refuses an index over originals, unsafe file names and symlinked records
+ok 18 - CLI refuses an index over originals, unsafe file names and symlinked records
+  ---
+  duration_ms: 1175.532758
+  type: 'test'
+  ...
+# Subtest: CLI draft produces reviewable JSON without writing or executing its body
+ok 19 - CLI draft produces reviewable JSON without writing or executing its body
+  ---
+  duration_ms: 567.366605
+  type: 'test'
+  ...
+# Subtest: two agents can disagree and resume without rewriting the first contribution
+ok 20 - two agents can disagree and resume without rewriting the first contribution
+  ---
+  duration_ms: 7.778854
+  type: 'test'
+  ...
+# Subtest: responses require a real earlier event; a new question needs no fabricated reply
+ok 21 - responses require a real earlier event; a new question needs no fabricated reply
+  ---
+  duration_ms: 2.700379
+  type: 'test'
+  ...
+# Subtest: JSON roundtrip retains authors, evidence and references as an independent copy
+ok 22 - JSON roundtrip retains authors, evidence and references as an independent copy
+  ---
+  duration_ms: 1.3063
+  type: 'test'
+  ...
+# Subtest: imports refuse duplicate IDs, false parents and future or self reply references
+ok 23 - imports refuse duplicate IDs, false parents and future or self reply references
+  ---
+  duration_ms: 1.497715
+  type: 'test'
+  ...
+# Subtest: malformed records and implied certification or publication are rejected
+ok 24 - malformed records and implied certification or publication are rejected
+  ---
+  duration_ms: 5.786565
+  type: 'test'
+  ...
+# Subtest: content and total import limits count characters and UTF-8 bytes
+ok 25 - content and total import limits count characters and UTF-8 bytes
+  ---
+  duration_ms: 52.266456
+  type: 'test'
+  ...
+# Subtest: the 100-event limit is enforced on import and append without changing the input
+ok 26 - the 100-event limit is enforced on import and append without changing the input
+  ---
+  duration_ms: 12.957387
+  type: 'test'
+  ...
+# Subtest: HTML, instruction-like text and Markdown fences remain literal data
+ok 27 - HTML, instruction-like text and Markdown fences remain literal data
+  ---
+  duration_ms: 2.897904
+  type: 'test'
+  ...
+# Subtest: data accessors are rejected without invoking supplied code
+ok 28 - data accessors are rejected without invoking supplied code
+  ---
+  duration_ms: 2.394326
+  type: 'test'
+  ...
+# Subtest: draft input metadata is copied and unexpected constructor options are rejected
+ok 29 - draft input metadata is copied and unexpected constructor options are rejected
+  ---
+  duration_ms: 1.241054
+  type: 'test'
+  ...
+# Subtest: a new execution can respond with its own evidence without replacing prior provenance
+ok 30 - a new execution can respond with its own evidence without replacing prior provenance
+  ---
+  duration_ms: 2.333703
+  type: 'test'
+  ...
+# Subtest: execution identifiers and response evidence remain bounded data
+ok 31 - execution identifiers and response evidence remain bounded data
+  ---
+  duration_ms: 2.981525
+  type: 'test'
+  ...
+# Subtest: a different clock cannot prevent a new execution from contesting an accepted record
+ok 32 - a different clock cannot prevent a new execution from contesting an accepted record
+  ---
+  duration_ms: 1.101023
+  type: 'test'
+  ...
+1..32
+# tests 32
+# suites 0
+# pass 32
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 3371.812014

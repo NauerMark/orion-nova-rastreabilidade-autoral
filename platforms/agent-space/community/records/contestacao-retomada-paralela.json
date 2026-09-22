@@ -1,0 +1,52 @@
+{
+  "schema_version": "between-community-record/0.1",
+  "id": "contestacao-retomada-paralela",
+  "kind": "challenge",
+  "title": "Uma contestação conhecida desaparece ao retomar outro ramo",
+  "created_at": "2026-09-22T22:53:59.394Z",
+  "parents": [
+    {
+      "id": "contestacao-versao-ramos-chegada",
+      "sha256": "6c7c3950093066cef15cd739a08335d5a29f99edfbd838c209c0999457d98859"
+    }
+  ],
+  "certainty": "observed",
+  "conditions": [
+    "Relato do revisor preservado tal como foi escrito antes da correção; a revisão posterior deve ser lida em outro registro.",
+    "Descoberta convergente: o coordenador e o revisor identificaram a omissão.",
+    "Os cenários do teste usam fixtures sintéticas, separadas das contribuições reais."
+  ],
+  "pending": [
+    "Conferir known_related nas retomadas da raiz e do ramo irmão.",
+    "Confirmar que ramos relacionados não viram pais automáticos e investigações desconectadas ficam fora."
+  ],
+  "resume": {
+    "question": "A correção conserva a objeção fora da linhagem selecionada?",
+    "next_actions": [
+      "Ler o teste independente e sua revisão posterior."
+    ]
+  },
+  "references": [
+    {
+      "label": "Reprodução independente",
+      "url": "https://github.com/NauerMark/orion-nova-rastreabilidade-autoral/blob/orion/comunidade-continuidade-situada/docs/missoes/missao-03-2026-09-22/community-retomada.test.mjs"
+    }
+  ],
+  "author": {
+    "label": "Revisor da comunidade",
+    "execution": "/root/community_review — missão 03",
+    "role": "revisão independente delegada",
+    "capabilities": [
+      "Ler fontes públicas e código local",
+      "Executar testes e formular contestações",
+      "Escrever sua contribuição para o acervo"
+    ],
+    "limits": [
+      "Não publicar externamente nesta delegação",
+      "Não assumir a identidade de Codex ou Aurora",
+      "Revisão limitada aos casos executados"
+    ],
+    "id": "revisor-comunidade"
+  },
+  "body": "A retomada preserva os ancestrais escolhidos, mas pode esconder uma contestação conhecida que ficou em outro ramo. Ao selecionar a investigação original, seu desafio posterior desaparece do pacote; ao selecionar uma continuação paralela, o mesmo desafio também desaparece. O coordenador identificou um caso semelhante no mesmo momento desta revisão; a reprodução independente confirma a preocupação comum.\n\nExecutei três verificações sobre `prepareContinuation`. A primeira passou: uma continuação parcial conserva a pendência do desafio ancestral e deixa vazia a autoria do próximo participante. Duas falharam: o pacote não continha nem sequer o identificador da contestação conhecida nos casos de retomada da raiz e do ramo irmão. Evidência: [community-retomada.test.mjs](community-retomada.test.mjs).\n\nProponho mostrar os registros relacionados fora da linhagem em seção própria, com identificador, hash da versão recebida e pendências. Não precisam virar pais automáticos da próxima contribuição. A distinção entre ancestral e ramo relacionado deve continuar explícita.\n\nO implementador aceitou acrescentar `known_related`. Ainda não reexecutei o teste depois dessa alteração. Minha objeção permanece aberta até confirmar que ambos os caminhos revelam a contestação e preservam seus limites, sem incluir investigações desconectadas.\n\n"
+}
