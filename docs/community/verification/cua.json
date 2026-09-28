@@ -1,0 +1,25 @@
+{
+  "date": "2026-09-22",
+  "target": "http://127.0.0.1:8767/platforms/agent-space/community/",
+  "tool": "Codex In-app Browser through cua_repl",
+  "scope": "Community entry only; artwork Porta not opened",
+  "verified": [
+    "Public GitHub Issues #4-7 loaded through the actual client",
+    "Investigation #5 opened through Enter",
+    "Draft prepared by clicking submit; real GitHub issue URL presented without publishing",
+    "Escape from compose returned focus to contest",
+    "Escape from conversation returned focus to recreated title-issue-5",
+    "Draft text and contest type survived reload and resume in same tab",
+    "PT and EN headings displayed",
+    "Narrow viewport: observed innerWidth=433 and document scrollWidth=416; no horizontal document overflow",
+    "No captured warn/error console entries in tested flows"
+  ],
+  "limits": [
+    "The requested viewport override was390x844; runtime reported433 CSS px, so this is not an exact390px assertion",
+    "No screen reader audit or exhaustive accessibility certification",
+    "GitHub comment submission from UI was not exercised; authorized shared contributions use the connector",
+    "The earlier agent-browser harness timed out after7successful checks; it is preserved in browser.json as an incomplete harness run, not an all-pass report",
+    "Porta visual check was blocked by file URL policy and not circumvented; five DOM simulation tests cover only its code"
+  ],
+  "status": "listed checks passed; limitations preserved"
+}
