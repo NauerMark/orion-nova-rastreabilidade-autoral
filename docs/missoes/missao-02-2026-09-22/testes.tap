@@ -1,0 +1,118 @@
+TAP version 13
+# Subtest: a resource transfer cannot overspend or rewrite the first allocation
+ok 1 - a resource transfer cannot overspend or rewrite the first allocation
+  ---
+  duration_ms: 4.300705
+  type: 'test'
+  ...
+# Subtest: a quotation withdrawal actually removes H1 and prevents reintroduction
+ok 2 - a quotation withdrawal actually removes H1 and prevents reintroduction
+  ---
+  duration_ms: 0.80105
+  type: 'test'
+  ...
+# Subtest: the document can be corrected or held without discarding its first version
+ok 3 - the document can be corrected or held without discarding its first version
+  ---
+  duration_ms: 0.744669
+  type: 'test'
+  ...
+# Subtest: disagreement can be recorded without changing an allocation or earning a score
+ok 4 - disagreement can be recorded without changing an allocation or earning a score
+  ---
+  duration_ms: 0.73795
+  type: 'test'
+  ...
+# Subtest: declared authorship on prior versions survives a handover
+ok 5 - declared authorship on prior versions survives a handover
+  ---
+  duration_ms: 0.319007
+  type: 'test'
+  ...
+# Subtest: malformed, oversized and discontinuous imported records are rejected
+ok 6 - malformed, oversized and discontinuous imported records are rejected
+  ---
+  duration_ms: 1.106917
+  type: 'test'
+  ...
+# Subtest: drafts and every mission support a consistent round trip
+ok 7 - drafts and every mission support a consistent round trip
+  ---
+  duration_ms: 0.463746
+  type: 'test'
+  ...
+# Subtest: the same enabled logical control keeps focus after being replaced
+ok 8 - the same enabled logical control keeps focus after being replaced
+  ---
+  duration_ms: 2.400988
+  type: 'test'
+  ...
+# Subtest: a counter at its limit moves to the enabled sibling, before other controls
+ok 9 - a counter at its limit moves to the enabled sibling, before other controls
+  ---
+  duration_ms: 0.435063
+  type: 'test'
+  ...
+# Subtest: a removed control continues forward from its previous position, skipping disabled controls
+ok 10 - a removed control continues forward from its previous position, skipping disabled controls
+  ---
+  duration_ms: 0.335467
+  type: 'test'
+  ...
+# Subtest: without a forward destination, the nearest enabled previous control is used
+ok 11 - without a forward destination, the nearest enabled previous control is used
+  ---
+  duration_ms: 0.221176
+  type: 'test'
+  ...
+# Subtest: focus outside the board is preserved without a focus call
+ok 12 - focus outside the board is preserved without a focus call
+  ---
+  duration_ms: 0.218159
+  type: 'test'
+  ...
+# Subtest: source disclosure remains open while the board is replaced
+ok 13 - source disclosure remains open while the board is replaced
+  ---
+  duration_ms: 0.175785
+  type: 'test'
+  ...
+# Subtest: source disclosure state is preserved even with focus outside the board
+ok 14 - source disclosure state is preserved even with focus outside the board
+  ---
+  duration_ms: 0.300224
+  type: 'test'
+  ...
+# Subtest: a source deliberately closed by the reader does not reopen on the next action
+ok 15 - a source deliberately closed by the reader does not reopen on the next action
+  ---
+  duration_ms: 0.348272
+  type: 'test'
+  ...
+# Subtest: when every destination is disabled no invalid focus is attempted
+ok 16 - when every destination is disabled no invalid focus is attempted
+  ---
+  duration_ms: 0.326218
+  type: 'test'
+  ...
+# Subtest: a target that cannot receive focus does not stop the search
+ok 17 - a target that cannot receive focus does not stop the search
+  ---
+  duration_ms: 0.416603
+  type: 'test'
+  ...
+# Subtest: render is called exactly once and disabled states are not modified
+ok 18 - render is called exactly once and disabled states are not modified
+  ---
+  duration_ms: 0.320633
+  type: 'test'
+  ...
+1..18
+# tests 18
+# suites 0
+# pass 18
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 113.867857
