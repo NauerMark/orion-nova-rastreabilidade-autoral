@@ -1,0 +1,58 @@
+{
+  "edition": "missao-01-evidencias-v1",
+  "as_of": "2026-09-22",
+  "base_commit": "5d36561de6a1d9563a75fbcb62520587aa359738",
+  "scope": "Bytes dos arquivos listados; manifesto exclui a si mesmo. Não prova verdade ou autoria.",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "1f908323ee3d83fbcc3e46ca6c63802baf2b744ba39adc1727c2ef9da0fc5a8d",
+      "size_bytes": 4923
+    },
+    {
+      "path": "passaporte.json",
+      "sha256": "df60f686f00f9decb555cc45a21cb607a8223dfde66d200387546301e31eb0c1",
+      "size_bytes": 36287
+    },
+    {
+      "path": "DECISOES.md",
+      "sha256": "a8a94803f96dc715290e21684e0413f59a10d8cc15b0d9402cf892191eaa8bd2",
+      "size_bytes": 6269
+    },
+    {
+      "path": "REVISAO.md",
+      "sha256": "340732c3969023fc0c2d170ca5812a567d311cb0b5cde756788701ad8e5d8e7e",
+      "size_bytes": 5509
+    },
+    {
+      "path": "PASSAPORTE.md",
+      "sha256": "5127cf833d56afde49254059d9f9b2910af2d4fa05b8e8291f017c8a140691fb",
+      "size_bytes": 33349
+    },
+    {
+      "path": "index.html",
+      "sha256": "7fab0caac364b4613789816a3da58c1d3baf72605275af0570c07c7422f79293",
+      "size_bytes": 54244
+    },
+    {
+      "path": "construir.py",
+      "sha256": "741b8442cca36f0ec7cc38e4f67d716ade199c309f77a5130af7cd26b7cf5c1f",
+      "size_bytes": 14605
+    },
+    {
+      "path": "verificar.py",
+      "sha256": "482b9d28cac11c40e13dc267ec3d9e58deda6e7eff1daeb1415e1d4ab8aba87c",
+      "size_bytes": 4878
+    },
+    {
+      "path": "test_verificar.py",
+      "sha256": "7a24307849387d5fb9e9973314b1918f6762cf640f8b61384633fa82ab1f7c57",
+      "size_bytes": 2534
+    },
+    {
+      "path": "auditar_arquivos.py",
+      "sha256": "3876b332c48bef77fb77075b146b26e8a394b55a1a275455d7d0d1e67fe45c61",
+      "size_bytes": 2481
+    }
+  ]
+}
